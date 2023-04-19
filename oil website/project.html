@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>project</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<script>
+	
+
+	function question() {
+		if (document.manoj.message.value == "") {
+			alert("enter plz questin if you want ");
+			document.manoj.message.focus();
+			return false;
+		}
+
+
+
+		return (true)
+
+
+	}
+
+	function validate() {
+		if (document.myform.email.value == "") {
+			alert("enter plz  your email ");
+			document.myform.email.focus();
+			return false;
+		}
+
+
+
+		return (true)
+
+
+	}
+
+
+
+
+var n = 0
+	var singh = new Array();
+	singh[0] = "image/indexfaqimage.png"
+	singh[1] = "image/indexfaqimage1.png"
+	singh[2] = "image/indexfaqimage2.png"
+
+	function faqswap(){
+
+		document.getElementById("faq").src = singh[n];
+		if (n < singh.length - 1) {
+
+			n++;
+		}
+
+		else {
+
+			n = 0;
+		}
+		setTimeout("faqswap()", 4000);
+
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<body onload="faqswap()">
+	<div id="head">
+
+		<div id="projectbanner">
+			<h1 class="aboutbannerhead">Our Project</h1>
+			<p class="aboutbannersubhead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:orange">Home</b>/Project</p>
+			<div id="aboutbannertop">
+				<h2 class="bannertopadd"><i class="fa-sharp fa-solid fa-location-dot"
+						style="color: orange"></i>&nbsp;&nbsp;99 Roving St., Big City, PKU 23456 &nbsp;&nbsp; <i
+						class="fa-solid fa-phone-volume" style="color: orange"></i>&nbsp;&nbsp;Hot Line : 123-234-1234
+				</h2>
+				<div id="bannertopfb">
+					<h1 class="bannertopfbicon"><i class="fa-brands fa-facebook" style="color: white"></i></h1>
+				</div>
+				<div id="bannertopinsta">
+					<h1 class="bannertopfbicon"><i class="fa-brands fa-instagram" style="color: white"></i></h1>
+				</div>
+				<div id="bannertoptweet">
+					<h1 class="bannertopfbicon"><i class="fa-brands fa-twitter" style="color: white"></i></h1>
+				</div>
+				<div id="bannertoppin">
+					<h1 class="bannertopfbicon"><i class="fa-brands fa-pinterest" style="color: white"></i></h1>
+				</div>
+			</div>
+
+			<div id="aboutnav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="project.html" style="color: white">Project</a></li>
+					<li><a href="service.html">Service</a></li>
+					<li><a href="#">Pages&nbsp;<i class="fa-sharp fa-solid fa-chevron-down"
+								style="color: white"></i></a>
+						<ul>
+							<li><a href="team.html">Team</a></li>
+							<li><a href="blog.html">Blog</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact us</a></li>
+				</ul>
+
+				<div id="logo"></div>
+			</div>
+
+
+		</div>
+
+		<p class="indexservice">Our Project</p>
+		<hr class="projectline">
+		<h1 class="indexservicehead">BOILE has done many projects<br> around the world</h1>
+		<p class="indexservicesubhead">Fusce tellus leo elementum in tortor id volutpat pellentesque ipsum luctus
+			Curabitur
+			laoree.</p>
+		<div id="projectbox">
+			<div id="projectimage"></div>
+			<h2 class="projectdate">22 February, 2023</h2>
+			<h1 class="projecthead">Exploration of new oil field</h1>
+			<p class="projectsubhead">Lorem ipsum dolor sit amet consectetur adipiscing<br> elit duis sed turpis blandit
+				cursus sem vel suscipit.<br>Lorem ipsum dolor sit amet consectetur adipiscing<br> elit duis sed turpis
+				blandit cursus sem vel suscipit.</p>
+
+			<a href="contact.html"><button class="projectbutton">View Details <i
+						class="fa-solid fa-arrow-right-long"></i></button></a>
+		</div>
+
+		<div id="project1box">
+			<div id="project1image"></div>
+			<h2 class="projectdate">24 February, 2023</h2>
+			<h1 class="projecthead">Enhanced oil recovery(EOR).</h1>
+			<p class="projectsubhead">Lorem ipsum dolor sit amet consectetur adipiscing<br> elit duis sed turpis blandit
+				cursus sem vel suscipit.<br>Lorem ipsum dolor sit amet consectetur adipiscing<br> elit duis sed turpis
+				blandit cursus sem vel suscipit.</p>
+
+			<a href="contact.html"><button class="projectbutton">View Details <i
+						class="fa-solid fa-arrow-right-long"></i></button></a>
+		</div>
+
+		<div id="project2box">
+			<div id="project2image"></div>
+			<h2 class="projectdate">28 February, 2023</h2>
+			<h1 class="projecthead">Renewable energy develop.</h1>
+			<p class="projectsubhead">Lorem ipsum dolor sit amet consectetur adipiscing<br> elit duis sed turpis blandit
+				cursus sem vel suscipit.<br>Lorem ipsum dolor sit amet consectetur adipiscing<br> elit duis sed turpis
+				blandit cursus sem vel suscipit.</p>
+
+			<a href="contact.html"><button class="projectbutton">View Details <i
+						class="fa-solid fa-arrow-right-long"></i></button></a>
+		</div>
+
+
+		<div id="project3box">
+			<div id="project3image"></div>
+			<h2 class="projectdate">2 March, 2023</h2>
+			<h1 class="projecthead">Implemention of carbon<br>capture and (CCS)system.</h1>
+			<p class="projectsubhead"><br>Lorem ipsum dolor sit amet consectetur adipiscing<br> elit duis sed turpis
+				blandit cursus sem vel suscipit.<br>Lorem ipsum dolor sit amet consectetur adipiscing.<br> </p>
+
+			<a href="contact.html"><button class="projectbutton">View Details <i
+						class="fa-solid fa-arrow-right-long"></i></button></a>
+		</div>
+
+		<div id="project4box">
+			<div id="project4image"></div>
+			<h2 class="projectdate">4 March, 2023</h2>
+			<h1 class="projecthead">Upgrading and expantion of an<br>exiting refinery.</h1>
+			<p class="projectsubhead"><br>Lorem ipsum dolor sit amet consectetur adipiscing<br> elit duis sed turpis
+				blandit cursus sem vel suscipit.<br>Lorem ipsum dolor sit amet consectetur adipiscing.<br> </p>
+
+			<a href="contact.html"><button class="projectbutton">View Details <i
+						class="fa-solid fa-arrow-right-long"></i></button></a>
+		</div>
+
+
+		<div id="project5box">
+			<div id="project5image"></div>
+			<h2 class="projectdate">6 March, 2023</h2>
+			<h1 class="projecthead">Development of a new shale<br>gas field.</h1>
+			<p class="projectsubhead"><br>Lorem ipsum dolor sit amet consectetur adipiscing<br> elit duis sed turpis
+				blandit cursus sem vel suscipit.<br>Lorem ipsum dolor sit amet consectetur adipiscing.<br> </p>
+
+			<a href="contact.html"><button class="projectbutton">View Details <i
+						class="fa-solid fa-arrow-right-long"></i></button></a>
+		</div>
+
+		<div id="aboutmid">
+			<div id="aboutmidimage"></div>
+			<p class="aboutmid">Career</p>
+			<hr class="aboutmidline">
+			<h1 class="aboutmidhead">Explore your Future</h1>
+			<h2 class="aboutmidsubhead">We give you the tools you need to discover your perfect job match, and the
+				freedom<br> and support to take your career to the next level.<h2>
+					<a href="contact.html"><button class="aboutmidbutton">READ MORE</button></a>
+
+
+		</div>
+
+		<p class="indexfaq">FAQs</p>
+		<hr class="indexfaqline">
+		<h1 class="indexfaqhead">Frequently Asked <br> Question.</h1>
+		<p class="indexfaqsubhead">Fusce tellus leo elementum in tortor id, volutpat<br> pellentesque ipsum luctus
+			Curabitur
+			laoreet massa at<br> tristique interdum, enim lacus</p>
+		<a href="service.html"><button class="indexfaqbutton">VIEW MORE</button></a>
+		<div id="indexfaqboxhead">
+			<h1 class="indexfaqboxhead">How Do Oil Companies Safe & Responsible Operations?</h1>
+		</div>
+		<div id="indexfaqboxsubhead">
+
+			<p class="indexfaqboxsubhead">Lorem ipsum dolor sit amet consectetur adipiscing elit <br>quisque at sem
+				molestie
+				viverra sem nec luctus nisi <br>aliquam et commodo ex etiam cursus dictum erat<br> hendrerit lobortis
+				ligula.</p>
+
+		</div>
+		<div id="indexfaqboxhead1">
+			<h1 class="indexfaqboxhead">What is Fracking and How Does It Impact the Environment?</h1>
+		</div>
+		<div id="indexfaqboxsubhead1">
+			<p class="indexfaqboxsubhead">Lorem ipsum dolor sit amet consectetur adipiscing elit <br>quisque at sem
+				molestie
+				viverra sem nec luctus nisi <br>aliquam et commodo ex etiam cursus dictum erat<br> hendrerit lobortis
+				ligula.</p>
+		</div>
+		<div id="indexfaqboxhead2">
+			<h1 class="indexfaqboxhead2">What is the Future of Oil and Gas Exploration in the Face of Climate Change?
+			</h1>
+		</div>
+		<div id="indexfaqboxsubhead2">
+			<p class="indexfaqboxsubhead">Lorem ipsum dolor sit amet consectetur adipiscing elit <br>quisque at sem
+				molestie
+				viverra sem nec luctus nisi <br>aliquam et commodo ex etiam cursus dictum erat<br> hendrerit lobortis
+				ligula.</p>
+		</div>
+		<div id="indexfaqbox">
+			<div id="indexfaqimage"><img src="image/indexfaqimage.png" width="350px" height="370px" alt="faq" id="faq">
+			</div>
+
+			<h1 class="indexfaqboximagehead">Send Your Question Here!</h1>
+			<form name="manoj" action="#">
+				<input type="text" name="message" placeholder="Any Have Question">
+
+				<button class="indexfaqboximagebutton" onClick="return(question())">SEND QUESTION &nbsp;<i
+						class="fa-solid fa-arrow-right-long"></i></button>
+			</form>
+		</div>
+		<div id="indexnewsletter">
+			<div id="indexnewsletterimage"></div>
+			<h1 class="indexnewsletterhead">Subscribe Our Newsletter.</h1>
+			<form name="myform" action="#">
+				<input type="email" name="email" placeholder="Your Email Here">
+
+				<button class="newsletterbutton" onClick="return(validate())">SUBCRIBE NOW &nbsp;<i
+						class="fa-solid fa-arrow-right-long"></i></button>
+
+			</form>
+
+
+		</div>
+		<div id="indexfooter"><br><br><br><br><br><br><br><br><br><br><br><br>
+			<div id="logo"></div>
+
+			<p class="footerogoabout">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Ut elit tellus,
+				luctus
+				nec ullamcorper mattis, pulvinar <br>dapibus leo.</p>
+			<h1 class="footerhead">Quick-Links Our-Services Articles-News</h1>
+			<hr class="quick">
+			<hr class="service">
+			<hr class="news">
+			<p class="quickabout"><b style="color:orange"><i
+						class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;Home<br><b style="color:orange"><i
+						class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;About Us<br><b style="color:orange"><i
+						class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;Services<br><b style="color:orange"><i
+						class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;FAQs<br><b style="color:orange"><i
+						class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;Blog</p>
+			<p class="serviceabout"><b style="color:orange"><i
+						class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;Hydraulic Fracturing.<br><b
+					style="color:orange"><i class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;Enhance Oil
+				Recovery.<br><b style="color:orange"><i class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;Oil &
+				Gas
+				Marketing.<br><b style="color:orange"><i class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;Oil
+				Explor
+				& Production.<br><b style="color:orange"><i
+						class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;Renewable Enery.<br><b
+					style="color:orange"><i class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;Thermal Power.</p>
+			<h2 class="newsabout">
+				The Evolving Landscape of Oil and Gas<br>Financing: Trends and Innovation<br><br><br>Driving Efficency
+				and
+				Productivity: Best<br>Practice for Oil and Gas Operation
+			</h2>
+			<p class="newsdate">23 February 2023<br>25 February 2023</p>
+
+			<p class="copyright">Copyright 2023@ All Right Reserved Design by Manoj Singh</p>
+		</div>
+		<hr class="footerline">
+
+
+
+
+
+
+
+
+
+
+	</div>
+</body>
+
+</html>

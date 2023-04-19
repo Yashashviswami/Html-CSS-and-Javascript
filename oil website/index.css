@@ -1,0 +1,2731 @@
+@font-face {
+	font-family: roboto;
+	src: url("font/Roboto (1)/Roboto-Black.ttf");
+	src: url("font/Roboto (1)/Roboto-Regular.ttf");
+}
+html{scroll-behavior: smooth}
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#head {
+	width: 1360px;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+}
+
+#banner {
+	width: 1360px;
+	height: 700px;
+	background: red;
+	margin: auto;
+	
+	overflow: hidden
+	
+}
+#banner img{animation-name:zoom;
+	animation-duration: 12s;
+	animation-delay: 2s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;animation-timing-function: ease-in-out;}
+@keyframes zoom{
+	0%{transform: scale(1);}	
+	50%{transform: scale(1.1);}
+	100%{transform: scale(1.2);}
+	
+	
+	
+}
+#banner #slider {
+	width: 100%
+}
+
+#bannertop {
+	width: 1360px;
+	height: 70px;
+	background: rgba(22, 22, 22, 1.00);
+	position: absolute;
+	border-bottom: 1px solid grey;
+	z-index: 1;
+	position: absolute;
+	margin-top: -710px
+}
+
+#bannertopfb {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	border-radius: 50%;
+	background: orange;
+	margin-left: 1150px;
+	margin-top: 20px
+}
+
+#bannertopfb:hover {
+	background: transparent;
+	transition: 0.5s
+}
+
+#bannertopfb:hover .bannertopfbicon {
+	transform: scale(0.8);
+	transition: 0.5s
+}
+
+.bannertopfbicon {
+	;
+	color: white;
+	;
+	font-size: 17px;
+	text-align: center;
+	padding-top: 6px
+}
+
+#bannertopinsta {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	border-radius: 50%;
+	background: orange;
+	margin-left: 1190px;
+	margin-top: 20px
+}
+
+#bannertopinsta:hover {
+	background: transparent;
+	transition: 0.5s
+}
+
+#bannertopinsta:hover .bannertopfbicon {
+	transform: scale(0.8);
+	transition: 0.5s
+}
+
+#bannertoptweet {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	border-radius: 50%;
+	background: orange;
+	margin-left: 1230px;
+	margin-top: 20px
+}
+
+#bannertoptweet:hover {
+	background: transparent;
+	transition: 0.5s
+}
+
+#bannertoptweet:hover .bannertopfbicon {
+	transform: scale(0.8);
+	transition: 0.5s
+}
+
+#bannertoppin {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	border-radius: 50%;
+	background: orange;
+	margin-left: 1270px;
+	margin-top: 20px
+}
+
+#bannertoppin:hover {
+	background: transparent;
+	transition: 0.5s
+}
+
+#bannertoppin:hover .bannertopfbicon {
+	transform: scale(0.8);
+	transition: 0.5s
+}
+
+.bannertopadd {
+	font-size: 17px;
+	color: white;
+	text-align: center;
+	position: absolute;
+	padding-left: 30px;
+	font-family: roboto;
+	padding-top: 25px
+}
+
+#nav {
+	width: 1360px;
+	height: 100px;
+	background: rgba(22, 22, 22, 1.00);
+	position: absolute;
+	margin-top: -640px
+}
+
+#logo {
+	width: 200px;
+	height: 80px;
+	background: url("image/logo.png");
+	position: absolute;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 20px
+}
+
+ul {
+	margin-left: 650px;
+	margin-top: 40px;
+	position: absolute
+}
+
+ul li {
+	list-style: none;
+	display: inline
+}
+
+ul li ul li {
+	display: none;
+	width: 180px;
+	height: 50px;
+	background: white;
+	margin-left: -210px;
+	margin-top: -5px;
+	color: black;
+	padding-top: 18px;
+	border-bottom: 2px solid orange
+}
+
+ul li a {
+	padding: 20px;
+	color: orange;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: roboto regular;
+}
+
+ul li a:hover {
+	color: white;
+	transition: 0.5s
+}
+
+ul li:hover ul li {
+	display: block;
+	background: black;
+}
+
+.bannerheadtop {
+	font-size: 23px;
+	color: white;
+	font-family: roboto;
+	position: absolute;
+	top: 200px;
+	padding-left: 20px;
+	line-height: 10px
+}
+
+.bannerhead {
+	font-size: 75px;
+	color: white;
+	font-family: roboto;
+	position: absolute;
+	top: 250px;
+	padding-left: 20px;
+	text-align: left;
+	font-weight: bolder
+}
+
+.bannersubhead {
+	font-size: 18px;
+	color: white;
+	font-family: roboto regular;
+	position: absolute;
+	top: 550px;
+	padding-left: 20px;
+	text-align: left;
+}
+
+.bannerbutton {
+	width: 220px;
+	height: 48px;
+	background: orange;
+	color: white;
+	font-family: roboto regular;
+	border: none;
+	left: 20px;
+	top: 620px;
+	font-size: 17px;
+	position: absolute;
+	
+}
+
+.bannerbutton:hover {
+	background-color: rgba(18, 18, 18, 1.00);
+	transition: 0.5s;
+	transform: scale(0.9)
+}
+
+#indexbox1 {
+	width: 400px;
+	height: 220px;
+	margin-left: 20px;
+	margin-top: 100px;
+	background: white;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	box-shadow: 2px 2px 2px 2px lightgrey
+}
+
+#indexbox1circle:hover {
+	transform: scale(0.9);
+	transition: 0.5s
+}
+
+.indexbox1head {
+	font-size: 28px;
+	color: black;
+	padding-left: 50px;
+	padding-top: 50px;
+	position: absolute;
+	font-family: roboto;
+	font-weight: bolder
+}
+
+.indexbox1subhead {
+	font-size: 17px;
+	color: grey;
+	padding-left: 50px;
+	padding-top: 110px;
+	position: absolute;
+	font-family: roboto regular;
+	line-height: 25px
+}
+
+#indexbox1circle {
+	width: 70px;
+	height: 70px;
+	background: orange;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: -40px
+}
+
+#indexbox2 {
+	width: 400px;
+	height: 220px;
+	margin-left: 470px;
+	margin-top: -220px;
+	background: white;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	box-shadow: 2px 2px 2px 2px lightgrey
+}
+
+#indexbox2circle {
+	width: 70px;
+	height: 70px;
+	background: orange;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: -40px
+}
+
+#indexbox2circle:hover {
+	transform: scale(0.9);
+	transition: 0.5s
+}
+
+#indexbox3 {
+	width: 400px;
+	height: 220px;
+	margin-left: 920px;
+	margin-top: -220px;
+	background: white;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	box-shadow: 2px 2px 2px 2px lightgrey
+}
+
+#indexbox3circle {
+	width: 70px;
+	height: 70px;
+	background: orange;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: -40px
+}
+
+#indexbox3circle:hover {
+	transform: scale(0.9);
+	transition: 0.5s
+}
+
+#indexabooutimage {
+	width: 640px;
+	height: 600px;
+	background: url("image/indexabooutimage.png");
+	margin-top: 100px;
+	margin-left: 20px
+}
+
+.indexabout {
+	color: black;
+	font-family: roboto regular;
+	font-size: 30px;
+	padding-left: 740px;
+	padding-top: 170px;
+	line-height: 10px;
+	position: absolute
+}
+
+.indexabouthead {
+	color: black;
+	font-family: roboto;
+	font-size: 50px;
+	position: absolute;
+	margin-left: 740px;
+	margin-top: 210px
+}
+
+.idnexaboutline {
+	color: orange;
+	font-family: roboto;
+	font-size: 20px;
+	position: absolute;
+	margin-left: 740px;
+	margin-top: 360px;
+	font-style: italic
+}
+
+.indexaboutsubhead {
+	color: black;
+	font-family: roboto regular;
+	font-size: 18px;
+	padding-left: 740px;
+	padding-top: 430px;
+	position: absolute
+}
+
+.indexaboutbutton {
+	width: 180px;
+	height: 48px;
+	background: orange;
+	color: white;
+	font-family: roboto regular;
+	border: none;
+	margin-left: 740px;
+	margin-top: 650px;
+	font-size: 17px;
+	position: absolute
+}
+
+.indexaboutbutton:hover {
+	background-color: rgba(18, 18, 18, 1.00);
+	transition: 0.5s;
+	transform: scale(0.9)
+}
+
+#indexaboutbox {
+	width: 310px;
+	height: 220px;
+	background: orange;
+	margin-top: 60px;
+	margin-left: -20px;
+	position: absolute
+}
+
+.indexaboutbox {
+	font-size: 20px;
+	color: black;
+	padding-left: 30px;
+	padding-top: 20px;
+	position: absolute;
+	font-family: roboto;
+	font-weight: bolder;
+	line-height: 35px
+}
+
+.indexwhy {
+	color: black;
+	font-family: roboto regular;
+	font-size: 30px;
+	padding-left: 830px;
+	padding-top: 130px;
+	line-height: 30px;
+	position: absolute
+}
+
+.indexwhyhead {
+	color: black;
+	font-family: roboto;
+	font-size: 40px;
+	padding-left: 830px;
+	padding-top: 220px;
+	line-height: 45px;
+	position: absolute
+}
+
+.indexwhysubhead {
+	color: black;
+	font-family: roboto regular;
+	font-size: 18px;
+	padding-left: 830px;
+	padding-top: 340px;
+	line-height: 25px;
+	position: absolute
+}
+
+.indexwhynoofyear {
+	color: orange;
+	font-family: roboto regular;
+	font-size: 60px;
+	padding-left: 1130px;
+	padding-top: 480px;
+	position: absolute
+}
+
+.indexwhyexp {
+	color: black;
+	font-family: roboto regular;
+	font-size: 20px;
+	padding-left: 1110px;
+	padding-top: 550px;
+	position: absolute
+}
+
+hr.indexwhyline {
+	width: 160px;
+	margin-left: 830px;
+	;
+	border: 1px solid orange;
+	position: absolute;
+	margin-top: 190px
+}
+
+.indexabouthead {
+	color: black;
+	font-family: roboto;
+	font-size: 50px;
+	position: absolute;
+	margin-left: 740px;
+	margin-top: 210px
+}
+
+.idnexaboutline {
+	color: orange;
+	font-family: roboto;
+	font-size: 20px;
+	position: absolute;
+	margin-left: 740px;
+	margin-top: 360px;
+	font-style: italic
+}
+
+.indexaboutsubhead {
+	color: black;
+	font-family: roboto regular;
+	font-size: 18px;
+	padding-left: 740px;
+	padding-top: 430px;
+	position: absolute
+}
+
+#indexwhychoose {
+	width: 350px;
+	height: 230px;
+	margin-left: 20px;
+	margin-top: 120px;
+	background: white;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	box-shadow: 2px 2px 2px 2px lightgrey
+}
+
+.indexwhychoosehead {
+	font-size: 23px;
+	color: black;
+	padding-left: 40px;
+	padding-top: 70px;
+	position: absolute;
+	font-family: roboto;
+	font-weight: bolder
+}
+
+.indexwhychoosesubhead {
+	font-size: 16px;
+	color: grey;
+	padding-left: 40px;
+	padding-top: 125px;
+	position: absolute;
+	font-family: roboto regular
+}
+
+#indexwhychoosecircle {
+	width: 80px;
+	height: 92px;
+	background: orange;
+	border-radius: 45%;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: -40px
+}
+
+.indexwhychoosecircle {
+	color: white;
+	font-family: roboto;
+	font-size: 45px;
+	text-align: center;
+	padding-top: 17px
+}
+
+#indexwhychoose1 {
+	width: 350px;
+	height: 230px;
+	margin-left: 410px;
+	margin-top: -140px;
+	background: white;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	box-shadow: 2px 2px 2px 2px lightgrey
+}
+
+#indexwhychoose2 {
+	width: 350px;
+	height: 230px;
+	margin-left: 20px;
+	margin-top: -10px;
+	background: white;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	box-shadow: 2px 2px 2px 2px lightgrey
+}
+
+#indexwhychoose3 {
+	width: 350px;
+	height: 230px;
+	margin-left: 410px;
+	margin-top: -140px;
+	background: white;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	box-shadow: 2px 2px 2px 2px lightgrey
+}
+
+#indexwhychooseprofile {
+	width: 460px;
+	height: 120px;
+	margin-left: 860px;
+	margin-top: -80px;
+	background: orange;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	box-shadow: 1px 1px 1px 1px lightgrey
+}
+
+.indexwhychooseprofilename {
+	color: black;
+	font-family: roboto;
+	position: absolute;
+	padding-left: 220px;
+	padding-top: 30px;
+	font-size: 25px
+}
+
+.indexwhychooseprofilework {
+	color: black;
+	font-family: roboto regular;
+	position: absolute;
+	padding-left: 220px;
+	padding-top: 60px;
+	font-size: 18px
+}
+
+#indexwhychooseimage {
+	width: 150px;
+	height: 240px;
+	background: url("image/indexwhychooseimage.png");
+	position: absolute;
+	margin-left: 50px;
+	margin-top: -120px
+}
+
+.indexservice {
+	text-align: center;
+	color: black;
+	font-family: roboto regular;
+	font-size: 30px;
+	padding-top: 100px
+}
+
+hr.indexserviceline {
+	width: 170px;
+	color: orange;
+	border: 1px solid orange;
+	margin-left: 600px;
+	margin-top: 10px
+}
+
+.indexservicehead {
+	text-align: center;
+	color: rgba(15, 15, 15, 1.00);
+	font-family: roboto;
+	font-size: 45px;
+	padding-top: 25px
+}
+
+.indexservicesubhead {
+	text-align: center;
+	color: rgba(15, 15, 15, 1.00);
+	font-family: roboto regular;
+	font-size: 18px;
+	padding-top: 17px
+}
+
+#indexservice1 {
+	width: 400px;
+	height: 280px;
+	margin-left: 40px;
+	margin-top: 70px;
+	background: white;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	box-shadow: 2px 2px 2px 2px lightgrey
+}
+
+#indexservice1circle {
+	width: 70px;
+	height: 70px;
+	background: orange;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: -40px
+}
+
+#indexservice1circle:hover {
+	transform: scale(0.9);
+	transition: 0.5s
+}
+
+.indexservicebutton {
+	width: 220px;
+	height: 48px;
+	background: none;
+	color: orange;
+	font-family: roboto;
+	border: none;
+	margin-left: 10px;
+	margin-top: 220px;
+	font-size: 18px;
+	letter-spacing: 2px
+}
+
+.indexservicebutton:hover {
+	color: rgba(18, 18, 18, 1.00);
+	transition: 0.5s;
+	transform: scale(0.9)
+}
+
+#indexservice2 {
+	width: 400px;
+	height: 280px;
+	margin-left: 470px;
+	margin-top: -280px;
+	background: white;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	box-shadow: 2px 2px 2px 2px lightgrey
+}
+
+#indexservice2circle {
+	width: 70px;
+	height: 70px;
+	background: orange;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: -40px
+}
+
+#indexservice2circle:hover {
+	transform: scale(0.9);
+	transition: 0.5s
+}
+
+#indexservice3 {
+	width: 400px;
+	height: 280px;
+	margin-left: 920px;
+	margin-top: -280px;
+	background: white;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	box-shadow: 2px 2px 2px 2px lightgrey
+}
+
+#indexservice3circle {
+	width: 70px;
+	height: 70px;
+	background: orange;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: -40px
+}
+
+#indexservice3circle:hover {
+	transform: scale(0.9);
+	transition: 0.5s
+}
+
+#indexservice4 {
+	width: 400px;
+	height: 280px;
+	margin-left: 40px;
+	margin-top: 60px;
+	background: white;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	box-shadow: 2px 2px 2px 2px lightgrey
+}
+
+#indexservice4circle {
+	width: 70px;
+	height: 70px;
+	background: orange;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: -40px
+}
+
+.indexserviceicon {
+	color: white;
+	font-size: 35px;
+	text-align: center;
+	padding-top: 18px
+}
+
+#indexservice4circle:hover {
+	transform: scale(0.9);
+	transition: 0.5s
+}
+
+#indexservice5 {
+	width: 400px;
+	height: 280px;
+	margin-left: 470px;
+	margin-top: -280px;
+	background: white;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	box-shadow: 2px 2px 2px 2px lightgrey
+}
+
+#indexservice5circle {
+	width: 70px;
+	height: 70px;
+	background: orange;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: -40px
+}
+
+#indexservice5circle:hover {
+	transform: scale(0.9);
+	transition: 0.5s
+}
+
+#indexmid {
+	width: 1360px;
+	height: 600px;
+	background: black;
+	margin-top: 120px
+}
+
+.indexmid {
+	text-align: left;
+	color: white;
+	font-family: roboto regular;
+	font-size: 30px;
+	padding-top: 120px;
+	position: absolute;
+	margin-left: 40px
+}
+
+hr.indexmidline {
+	width: 190px;
+	color: orange;
+	border: 1px solid orange;
+	margin-left: 40px;
+	margin-top: 165px;
+	position: absolute
+}
+
+.indexmidhead {
+	text-align: left;
+	color: white;
+	font-family: roboto;
+	font-size: 45px;
+	padding-top: 185px;
+	position: absolute;
+	margin-left: 40px
+}
+
+.indexmidsubhead {
+	text-align: left;
+	color: lightgrey;
+	font-family: roboto regular;
+	font-size: 16px;
+	padding-top: 270px;
+	position: absolute;
+	margin-left: 40px;
+	line-height: 25px
+}
+
+.indexmidbutton {
+	width: 220px;
+	height: 48px;
+	background: none;
+	color: orange;
+	font-family: roboto;
+	border: none;
+	margin-left: 20px;
+	margin-top: 360px;
+	font-size: 18px;
+	letter-spacing: 2px;
+	position: absolute
+}
+
+.indexmidbutton:hover {
+	color: lightgrey;
+	transition: 0.5s;
+	transform: scale(0.9)
+}
+
+#indexservice6 {
+	width: 400px;
+	height: 280px;
+	margin-left: 920px;
+	margin-top: -280px;
+	background: white;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	box-shadow: 2px 2px 2px 2px lightgrey
+}
+
+#indexservice6circle {
+	width: 70px;
+	height: 70px;
+	background: orange;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: -40px
+}
+
+#indexservice6circle:hover {
+	transform: scale(0.9);
+	transition: 0.5s
+}
+
+#indexmidbox1 {
+	width: 250px;
+	height: 300px;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	position: absolute;
+	background: white;
+	;
+	margin-top: 120px;
+	margin-left: 460px
+}
+
+.indexmidbox1head {
+	text-align: left;
+	color: orange;
+	font-family: roboto;
+	font-size: 18px;
+	padding-top: 180px;
+	position: absolute;
+	margin-left: 20px
+}
+
+.indexmidbox1subhead {
+	text-align: left;
+	color: black;
+	font-family: roboto regular;
+	font-size: 25px;
+	padding-top: 220px;
+	position: absolute;
+	margin-left: 20px;
+	line-height: 25px
+}
+
+#indexmidbox1image {
+	width: 220px;
+	height: 140px;
+	background: url("image/indexmidbox1image.png");
+	position: absolute;
+	margin-left: 15px;
+	margin-top: 15px
+}
+
+#indexmidbox2 {
+	width: 250px;
+	height: 300px;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	position: absolute;
+	background: white;
+	;
+	margin-top: 120px;
+	margin-left: 750px
+}
+
+#indexmidbox2image {
+	width: 220px;
+	height: 140px;
+	background: url("image/indexmidbox2image.png");
+	position: absolute;
+	margin-left: 15px;
+	margin-top: 15px
+}
+
+#indexmidbox3 {
+	width: 250px;
+	height: 300px;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	position: absolute;
+	background: white;
+	;
+	margin-top: 120px;
+	margin-left: 1040px
+}
+
+#indexmidbox3image {
+	width: 220px;
+	height: 140px;
+	background: url("image/indexmidbox3image.png");
+	position: absolute;
+	margin-left: 15px;
+	margin-top: 15px
+}
+
+#indexwork {
+	width: 1300px;
+	margin-left: 20px;
+	height: 200px;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	box-shadow: 1px 1px 1px 1px lightgrey;
+	margin-top: -70px;
+	background: white
+}
+
+.indexworkhead {
+	color: orange;
+	font-size: 60px;
+	position: absolute;
+	margin-left: 150px;
+	margin-top: 40px;
+	font-family: roboto;
+	word-spacing: 150px
+}
+
+.indexworksubhead {
+	color: black;
+	font-size: 20px;
+	position: absolute;
+	margin-left: 135px;
+	margin-top: 110px;
+	font-family: roboto;
+	word-spacing: 150px
+}
+
+.indexwork {
+	text-align: left;
+	color: black;
+	font-family: roboto;
+	font-size: 26px;
+	margin-top: 50px;
+	position: absolute;
+	margin-left: 890px
+}
+
+hr.indexworkline {
+	width: 100px;
+	color: orange;
+	border: 1px solid orange;
+	margin-left: 1130px;
+	margin-top: 80px;
+	position: absolute
+}
+
+.indexteam {
+	text-align: left;
+	color: black;
+	font-family: roboto regular;
+	font-size: 30px;
+	padding-top: 60px;
+	position: absolute;
+	margin-left: 40px
+}
+
+hr.indexteamline {
+	width: 170px;
+	color: orange;
+	border: 1px solid orange;
+	margin-left: 40px;
+	margin-top: 105px;
+	position: absolute
+}
+
+.indexteamhead {
+	text-align: left;
+	color: rgba(17, 17, 17, 1.00);
+	font-family: roboto;
+	font-size: 45px;
+	padding-top: 125px;
+	position: absolute;
+	margin-left: 40px
+}
+
+hr.indexteamheadline {
+	width: 430px;
+	color: orange;
+	border: 1px solid orange;
+	margin-left: 540px;
+	margin-top: 145px;
+	position: absolute
+}
+
+.indexteambutton {
+	width: 220px;
+	height: 48px;
+	background: orange;
+	color: white;
+	font-family: roboto regular;
+	border: none;
+	margin-left: 1080px;
+	margin-top: 120px;
+	font-size: 17px;
+	position: absolute
+}
+
+.indexteambutton:hover {
+	background-color: rgba(18, 18, 18, 1.00);
+	transition: 0.5s;
+	transform: scale(0.9)
+}
+
+#indexteam1 {
+	width: 300px;
+	height: 400px;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	;
+	background: white;
+	;
+	margin-top: 270px;
+	margin-left: 40px;
+	box-shadow: 1px 1px 1px 1px lightgrey
+}
+
+.indexteam1name {
+	font-size: 30px;
+	color: black;
+	text-align: center;
+	padding-top: 230px;
+	font-family: roboto
+}
+
+.indexteam1work {
+	font-size: 20px;
+	color: orange;
+	text-align: center;
+	padding-top: 5px;
+	font-family: roboto
+}
+
+#indexteam1fb {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: orange;
+	margin-left: 70px;
+	margin-top: 20px
+}
+
+#indexteam1fb:hover {
+	background: rgba(19, 19, 19, 1.00);
+	transition: 0.5s
+}
+
+#indexteam1insta {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: orange;
+	margin-left: 110px;
+	margin-top: -30px
+}
+
+#indexteam1insta:hover {
+	background: rgba(19, 19, 19, 1.00);
+	transition: 0.5s
+}
+
+#indexteam1tweet {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: orange;
+	margin-left: 150px;
+	margin-top: -30px
+}
+
+#indexteam1tweet:hover {
+	background: rgba(19, 19, 19, 1.00);
+	transition: 0.5s
+}
+
+#indexteam1pin {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: orange;
+	margin-left: 190px;
+	margin-top: -30px
+}
+
+#indexteam1pin:hover {
+	background: rgba(19, 19, 19, 1.00);
+	transition: 0.5s
+}
+
+#indexteam1image {
+	width: 270px;
+	height: 200px;
+	background: url("image/indexteam1image.png");
+	position: absolute;
+	margin-left: 15px;
+	margin-top: 15px
+}
+
+#indexteam2 {
+	width: 300px;
+	height: 400px;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	position: absolute;
+	background: white;
+	;
+	margin-top: -400px;
+	margin-left: 370px;
+	box-shadow: 1px 1px 1px 1px lightgrey
+}
+
+#indexteam2image {
+	width: 270px;
+	height: 200px;
+	background: url("image/indexteam2image.png");
+	position: absolute;
+	margin-left: 15px;
+	margin-top: 15px
+}
+
+#indexteam3 {
+	width: 300px;
+	height: 400px;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	position: absolute;
+	background: white;
+	;
+	margin-top: -400px;
+	margin-left: 700px;
+	box-shadow: 1px 1px 1px 1px lightgrey
+}
+
+#indexteam3image {
+	width: 270px;
+	height: 200px;
+	background: url("image/indexteam3image.png");
+	position: absolute;
+	margin-left: 15px;
+	margin-top: 15px
+}
+
+#indexteam4 {
+	width: 300px;
+	height: 400px;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	position: absolute;
+	background: white;
+	;
+	margin-top: -400px;
+	margin-left: 1030px;
+	box-shadow: 1px 1px 1px 1px lightgrey
+}
+
+#indexteam4image {
+	width: 270px;
+	height: 200px;
+	background: url("image/indexteam4image.png");
+	position: absolute;
+	margin-left: 15px;
+	margin-top: 15px
+}
+
+#indexmid2 {
+	width: 680px;
+	height: 1000px;
+overflow: hidden;
+	margin-top: 120px;
+	
+}
+#indexmid2 #mid{width: 100%}
+#indexmid2 img{animation-name:zoom;
+	animation-duration: 12s;
+	animation-delay: 2s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;animation-timing-function: ease-in-out;}
+@keyframes zoom{
+	0%{transform: scale(1);}	
+	50%{transform: scale(1.1);}
+	100%{transform: scale(1.2);}
+	
+	
+	
+}
+#indexmid2image1 {
+	width: 680px;
+	height: 500px;
+	background: rgba(34, 34, 34, 1.00);
+	margin-left: 680px;
+	margin-top: -1000px
+}
+
+.indexmid2image1head {
+	font-size: 30px;
+	color: white;
+	font-family: roboto;
+	margin-top: 170px;
+	position: absolute;
+	margin-left: 150px
+}
+
+.indexmid2image1subhead {
+	font-size: 18px;
+	color: lightgrey;
+	font-family: roboto;
+	margin-top: 230px;
+	position: absolute;
+	margin-left: 150px;
+	line-height: 27px
+}
+
+#indexmid2image2 {
+	width: 680px;
+	height: 500px;
+	background: orange;
+	margin-left: 680px;
+	margin-top: 0px
+}
+
+.indexmid2icon {
+	color: orange;
+	font-size: 50px;
+	position: absolute;
+	margin-left: 150px;
+	margin-top: 100px
+}
+
+.indexfaq {
+	text-align: left;
+	color: black;
+	font-family: roboto regular;
+	font-size: 30px;
+	padding-top: 110px;
+	position: absolute;
+	margin-left: 40px
+}
+
+hr.indexfaqline {
+	width: 80px;
+	color: orange;
+	border: 1px solid orange;
+	margin-left: 40px;
+	margin-top: 155px;
+	position: absolute
+}
+
+.indexfaqhead {
+	text-align: left;
+	color: rgba(17, 17, 17, 1.00);
+	font-family: roboto;
+	font-size: 45px;
+	padding-top: 175px;
+	position: absolute;
+	margin-left: 40px
+}
+
+.indexfaqsubhead {
+	text-align: left;
+	color: rgba(17, 17, 17, 1.00);
+	font-family: roboto;
+	font-size: 18px;
+	padding-top: 315px;
+	position: absolute;
+	margin-left: 40px
+}
+
+.indexfaqbutton {
+	width: 180px;
+	height: 50px;
+	background: orange;
+	color: white;
+	font-family: roboto regular;
+	border: none;
+	margin-left: 40px;
+	margin-top: 420px;
+	font-size: 17px;
+	position: absolute
+}
+
+.indexfaqbutton:hover {
+	background-color: rgba(18, 18, 18, 1.00);
+	transition: 0.5s;
+	transform: scale(0.9)
+}
+
+#indexfaqboxhead {
+	width: 500px;
+	height: 60px;
+	background-color: rgba(11, 11, 11, 1.00);
+	margin-top: 120px;
+	margin-left: 450px
+}
+
+.indexfaqboxhead {
+	color: orange;
+	font-size: 18px;
+	font-family: roboto;
+	text-align: center;
+	padding-top: 15px
+}
+
+.indexfaqboxsubhead {
+	color: black;
+	font-size: 17px;
+	font-family: roboto regular;
+	text-align: left;
+	padding-top: 15px;
+	padding-left: 40px;
+	padding-top: 25px
+}
+
+#indexfaqboxsubhead {
+	width: 500px;
+	height: 130px;
+	background-color: rgba(239, 239, 239, 1.00);
+	margin-top: 0px;
+	margin-left: 450px
+}
+
+#indexfaqboxhead1 {
+	width: 500px;
+	height: 60px;
+	background-color: rgba(11, 11, 11, 1.00);
+	;
+	margin-left: 450px
+}
+
+#indexfaqboxsubhead1 {
+	width: 500px;
+	height: 130px;
+	background-color: rgba(239, 239, 239, 1.00);
+	margin-top: 0px;
+	margin-left: 450px
+}
+
+#indexfaqboxhead2 {
+	width: 500px;
+	height: 80px;
+	background-color: rgba(11, 11, 11, 1.00);
+	;
+	margin-left: 450px
+}
+
+.indexfaqboxhead2 {
+	color: orange;
+	font-size: 18px;
+	font-family: roboto;
+	text-align: left;
+	padding-top: 15px;
+	padding-left: 20px
+}
+
+#indexfaqboxsubhead2 {
+	width: 500px;
+	height: 130px;
+	background-color: rgba(239, 239, 239, 1.00);
+	margin-top: 0px;
+	margin-left: 450px
+}
+
+#indexfaqbox {
+	width: 350px;
+	height: 590px;
+	background: orange;
+	margin-left: 980px;
+	margin-top: -590px
+}
+
+.indexfaqboximagehead {
+	color: black;
+	position: absolute;
+	margin-left: 30px;
+	margin-top: 400px;
+	font-family: roboto;
+	font-size: 20px
+}
+
+#indexfaqbox input[type="text"] {
+	width: 270px;
+	height: 45px;
+	background: white;
+	border: 1px solid black;
+	position: absolute;
+	margin-left: 30px;
+	margin-top: 450px;
+	padding-left: 15px;
+	color: black
+}
+
+.indexfaqboximagebutton {
+	width: 290px;
+	height: 50px;
+	background: black;
+	border: none;
+	margin-left: 30px;
+	margin-top: 520px;
+	;
+	color: white;
+	font-family: roboto;
+	font-size: 18px
+}
+
+.indexfaqboximagebutton:hover {
+	background: rgba(33, 33, 33, 1.00);
+	transition: 0.5s
+}
+
+#indexfaqimage {
+	width: 350px;
+	height: 370px;
+	;
+	background: url("image/indexfaqimage.png");
+	position: absolute
+}
+
+hr.indexblogline {
+	width: 200px;
+	color: orange;
+	border: 1px solid orange;
+	margin-left: 570px;
+	margin-top: 10px
+}
+
+#indexblog1 {
+	width: 410px;
+	height: 530px;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	;
+	background: white;
+	;
+	margin-top: 70px;
+	margin-left: 40px;
+	box-shadow: 1px 1px 1px 1px lightgrey
+}
+
+.indexblogname {
+	font-size: 16px;
+	color: orange;
+	padding-left: 120px;
+	position: absolute;
+	padding-top: 280px;
+	font-family: roboto regular
+}
+
+.indexbloghead {
+	font-size: 26px;
+	color: black;
+	padding-left: 14px;
+	text-align: center;
+	padding-top: 310px;
+	font-family: roboto
+}
+
+.indexblogsubhead {
+	font-size: 16px;
+	color: black;
+	padding-left: 12px;
+	text-align: center;
+	padding-top: 20px;
+	font-family: roboto regular
+}
+
+#indexblog1image {
+	width: 370px;
+	height: 240px;
+	background: url("image/indexblog1image.png");
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 20px;
+	overflow: hidden;
+	transform: translate(0)
+}
+
+#indexblog1:hover img {
+	transform: scale(1.2);
+	transition: 0.5s
+}
+
+#indexblog2 {
+	width: 410px;
+	height: 530px;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	;
+	background: white;
+	;
+	margin-top: -530px;
+	margin-left: 480px;
+	box-shadow: 1px 1px 1px 1px lightgrey
+}
+
+#indexblog2image {
+	width: 370px;
+	height: 240px;
+	background: url("image/indexblog2image.png");
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 20px;
+	;
+	overflow: hidden;
+	transform: translate(0)
+}
+
+#indexblog2:hover img {
+	transform: scale(1.2);
+	transition: 0.5s
+}
+
+#indexblog3 {
+	width: 410px;
+	height: 530px;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	;
+	background: white;
+	;
+	margin-top: -530px;
+	margin-left: 920px;
+	box-shadow: 1px 1px 1px 1px lightgrey
+}
+
+#indexblog3image {
+	width: 370px;
+	height: 240px;
+	background: url("image/indexblog3image.png");
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 20px;
+	overflow: hidden;
+	transform: translate(0)
+}
+
+#indexblog3:hover img {
+	transform: scale(1.2);
+	transition: 0.5s
+}
+
+#indexnewsletter {
+	width: 1300px;
+	margin-left: 20px;
+	height: 250px;
+	margin-top: 100px;
+	background: orange;
+	z-index: 1;
+	position: absolute
+}
+
+#indexnewsletterimage {
+	width: 530px;
+	height: 250px;
+	background: url("image/indexnewsletterimage.png");
+	position: absolute
+}
+
+#indexnewsletter input[type="email"] {
+	width: 650px;
+	height: 45px;
+	background: white;
+	border: 1px solid black;
+	position: absolute;
+	margin-left: 550px;
+	margin-top: 89px;
+	padding-left: 15px;
+	color: black
+}
+
+.indexnewsletterhead {
+	color: black;
+	position: absolute;
+	margin-left: 550px;
+	margin-top: 30px;
+	font-family: roboto
+}
+
+.newsletterbutton {
+	width: 250px;
+	height: 55px;
+	background: black;
+	border: none;
+	position: absolute;
+	margin-left: 550px;
+	margin-top: 160px;
+	;
+	color: white;
+	font-family: roboto;
+	font-size: 18px
+}
+
+.newsletterbutton:hover {
+	background: rgba(33, 33, 33, 1.00);
+	transition: 0.5s
+}
+
+#indexfooter {
+	width: 1360px;
+	height: 630px;
+	background-color: rgba(13, 13, 13, 1.00);
+	margin-top: 240px
+}
+
+hr.footerline {
+	width: 1360px;
+	margin-top: -80px;
+	border: 0.2px solid lightgrey
+}
+
+.footerogoabout {
+	font-size: 16px;
+	font-family: roboto regular;
+	color: white;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 120px;
+	line-height: 27PX
+}
+
+.footerhead {
+	font-size: 28px;
+	color: white;
+	position: absolute;
+	font-family: roboto;
+	margin-left: 470px;
+	margin-top: 20px;
+	word-spacing: 120px;
+	line-height: 10px
+}
+
+hr.quick {
+	border: 0.5px solid orange;
+	width: 160px;
+	margin-left: 470px;
+	margin-top: 50px
+}
+
+hr.service {
+	border: 0.5px solid orange;
+	width: 170px;
+	margin-left: 745px;
+	margin-top: 0px
+}
+
+hr.news {
+	border: 0.5px solid orange;
+	width: 170px;
+	margin-left: 1025px;
+	margin-top: 0px
+}
+
+.quickabout {
+	font-size: 19px;
+	color: white;
+	position: absolute;
+	font-family: roboto regular;
+	margin-left: 470px;
+	margin-top: 20px;
+	line-height: 35px
+}
+
+.serviceabout {
+	font-size: 19px;
+	color: white;
+	position: absolute;
+	font-family: roboto regular;
+	margin-left: 740px;
+	margin-top: 20px;
+	line-height: 35px
+}
+
+.newsabout {
+	font-size: 17px;
+	color: white;
+	position: absolute;
+	font-family: roboto regular;
+	margin-left: 1020px;
+	margin-top: 20px;
+	line-height: 30px
+}
+
+.newsdate {
+	font-size: 16px;
+	color: orange;
+	position: absolute;
+	font-family: roboto regular;
+	margin-left: 1020px;
+	margin-top: 35px;
+	line-height: 120px
+}
+
+.copyright {
+	text-align: center;
+	color: white;
+	font-family: roboto regular;
+	padding-top: 310px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#aboutbanner {
+	width: 1360px;
+	height: 500px;
+	background: url("image/aboutbanner.png")
+}
+
+.aboutbannerhead {
+	font-size: 55px;
+	color: white;
+	font-family: roboto;
+	text-align: center;
+	padding-top: 270px;
+	position: absolute;
+	padding-left: 570px
+}
+
+.aboutbannersubhead {
+	font-size: 18px;
+	color: white;
+	font-family: roboto regular;
+	text-align: center;
+	padding-top: 360px;
+	position: absolute;
+	padding-left: 620px
+}
+
+#aboutbannertop {
+	width: 1360px;
+	height: 70px;
+	background: rgba(22, 22, 22, 1.00);
+	position: absolute;
+	border-bottom: 1px solid grey;
+	z-index: 1;
+	position: absolute;
+	margin-top: 0px
+}
+
+
+#aboutnav {
+	width: 1360px;
+	height: 100px;
+	background: rgba(22, 22, 22, 1.00);
+	position: absolute;
+	margin-top: 70px
+}
+
+
+#aboutimage {
+	width: 300px;
+	height: 300px;
+	background: url("image/aboutimage.png");
+	position: absolute;
+	border: 6px solid white;
+	margin-left: 380px;
+	margin-top: 330px
+}
+
+.aboutbossname {
+	font-size: 30px;
+	color: black;
+	margin-left: 740px;
+	margin-top: -50px;
+	font-family: roboto;
+	font-weight: bolder
+}
+
+.aboutbosswork {
+	font-size: 22px;
+	color: grey;
+	margin-left: 740px;
+	margin-top: px;
+	font-family: roboto;
+	font-weight: bolder
+}
+
+#aboutmid {
+	width: 1360px;
+	height: 330px;
+	background: url("image/aboutmid.png");
+	margin-top: 180px;
+	margin-left: 0px;
+	background-repeat: no-repeat
+}
+
+#aboutmidimage {
+	width: 340px;
+	height: 430px;
+	position: absolute;
+	background: url("image/aboutmidimage.png");
+	margin-top: -100px;
+	margin-left: 200px;
+}
+
+
+.aboutmid {
+	text-align: left;
+	color: white;
+	font-family: roboto regular;
+	font-size: 30px;
+	padding-top: 40px;
+	position: absolute;
+	margin-left: 660px
+}
+
+hr.aboutmidline {
+	width: 85px;
+	color: orange;
+	border: 1px solid orange;
+	margin-left: 660px;
+	margin-top: 75px;
+	position: absolute
+}
+
+.aboutmidhead {
+	text-align: left;
+	color: white;
+	font-family: roboto;
+	font-size: 45px;
+	padding-top: 95px;
+	position: absolute;
+	margin-left: 660px
+}
+
+.aboutmidsubhead {
+	text-align: left;
+	color: lightgrey;
+	font-family: roboto;
+	font-size: 16px;
+	padding-top: 160px;
+	position: absolute;
+	margin-left: 660px;
+	line-height: 25px
+}
+
+.aboutmidbutton {
+	width: 180px;
+	height: 55px;
+	background: orange;
+	color: white;
+	font-family: roboto;
+	border: none;
+	margin-left: 660px;
+	margin-top: 240px;
+	font-size: 18px;
+	letter-spacing: 2px;
+	position: absolute;
+	font-size: 18px
+}
+
+.aboutmidbutton:hover {
+	background:rgba(21,21,21,1.00);
+	transition: 0.5s;
+	transform: scale(0.8)
+}
+
+
+
+
+
+
+
+
+
+#projectbanner {
+	width: 1360px;
+	height: 500px;
+	background: url("image/projectbanner.png")
+}
+
+hr.projectline {
+	width: 150px;
+	border: 1px solid orange;
+	position: absolute;
+	margin-left: 610px
+}
+
+#projectbox {
+	width: 400px;
+	height: 540px;
+	backgrournd: white;
+	border-top: 2px solid orange;
+	border-left: 2px solid orange;
+	box-shadow: 1px 1px 1px 1px lightgrey;
+	margin-top: 70px;
+	margin-left: 40px
+}
+
+#projectimage {
+	width: 360px;
+	height: 220px;
+	background: url("image/projectimage.png");
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 20px
+}
+
+.projectdate {
+	font-size: 17px;
+	color: orange;
+	font-family: roboto regular;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 260px
+}
+
+.projecthead {
+	font-size: 27px;
+	color: black;
+	font-family: roboto;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 300px
+}
+
+.projectsubhead {
+	font-size: 16px;
+	color: grey;
+	font-family: roboto regular;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 360px;
+	line-height: 26px
+}
+
+.projectbutton {
+	width: 200px;
+	height: 50px;
+	color: orange;
+	font-family: roboto;
+	letter-spacing: 2px;
+	position: absolute;
+	margin-top: 470px;
+	margin-left: -5px;
+	background: none;
+	border: none;
+	font-size: 19px
+}
+
+.projectbutton:hover {
+	transform: scale(0.8);
+	transition: 0.5s;
+	color: grey
+}
+
+#project1box {
+	width: 400px;
+	height: 540px;
+	backgrournd: white;
+	border-top: 2px solid orange;
+	border-left: 2px solid orange;
+	box-shadow: 1px 1px 1px 1px lightgrey;
+	margin-top: -540px;
+	margin-left: 480px
+}
+
+#project1image {
+	width: 360px;
+	height: 220px;
+	background: url("image/project1image.png");
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 20px
+}
+
+#project2box {
+	width: 400px;
+	height: 540px;
+	backgrournd: white;
+	border-top: 2px solid orange;
+	border-left: 2px solid orange;
+	box-shadow: 1px 1px 1px 1px lightgrey;
+	margin-top: -540px;
+	margin-left: 920px
+}
+
+#project2image {
+	width: 360px;
+	height: 220px;
+	background: url("image/project2image.png");
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 20px
+}
+
+#project3box {
+	width: 400px;
+	height: 540px;
+	backgrournd: white;
+	border-top: 2px solid orange;
+	border-left: 2px solid orange;
+	box-shadow: 1px 1px 1px 1px lightgrey;
+	margin-top: 40px;
+	margin-left: 40px
+}
+
+#project3image {
+	width: 360px;
+	height: 220px;
+	background: url("image/project3image.png");
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 20px
+}
+
+#project4box {
+	width: 400px;
+	height: 540px;
+	backgrournd: white;
+	border-top: 2px solid orange;
+	border-left: 2px solid orange;
+	box-shadow: 1px 1px 1px 1px lightgrey;
+	margin-top: -540px;
+	margin-left: 480px
+}
+
+#project4image {
+	width: 360px;
+	height: 220px;
+	background: url("image/project4image.png");
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 20px
+}
+
+#project5box {
+	width: 400px;
+	height: 540px;
+	backgrournd: white;
+	border-top: 2px solid orange;
+	border-left: 2px solid orange;
+	box-shadow: 1px 1px 1px 1px lightgrey;
+	margin-top: -540px;
+	margin-left: 920px
+}
+
+#project5image {
+	width: 360px;
+	height: 220px;
+	background: url("image/project5image.png");
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 20px
+}
+
+
+
+
+
+
+
+
+
+
+
+#servicebanner {
+	width: 1360px;
+	height: 500px;
+	background: url("image/servicebanner.png")
+}
+
+#servicemid {
+	width: 1360px;
+	height: 200px;
+	background: url("image/servicemid.png");
+	margin-top: 120px;
+	background-attachment: fixed;
+	background-repeat: no-repeat
+}
+
+.servicemidline {
+	width: 100px;
+	position: absolute;
+	border: 1px solid orange;
+	margin-left: 60px;
+	margin-top: 100px
+}
+
+.servicemidhead {
+	color: white;
+	position: absolute;
+	font-family: roboto;
+	margin-left: 190px;
+	font-size: 30px;
+	margin-top: 60px
+}
+
+#servicemidlogo1 {
+	width: 160px;
+	height: 80px;
+	background: url("image/servicemidlogo1.png");
+	position: absolute;
+	margin-left: 620px;
+	margin-top: 60px
+}
+
+#servicemidlogo2 {
+	width: 160px;
+	height: 80px;
+	background: url("image/servicemidlogo2.png");
+	position: absolute;
+	margin-left: 800px;
+	margin-top: 60px
+}
+
+#servicemidlogo3 {
+	width: 160px;
+	height: 80px;
+	background: url("image/servicemidlogo3.png");
+	position: absolute;
+	margin-left: 980px;
+	margin-top: 60px
+}
+
+#servicemidlogo4 {
+	width: 160px;
+	height: 80px;
+	background: url("image/servicemidlogo4.png");
+	position: absolute;
+	margin-left: 1160px;
+	margin-top: 60px
+}
+
+.servicereviewbuttonbutton {
+	width: 160px;
+	height: 48px;
+	background: orange;
+	color: white;
+	font-family: roboto regular;
+	border: none;
+	margin-left: 1130px;
+	margin-top: 120px;
+	font-size: 17px;
+	position: absolute
+}
+
+.servicereviewbuttonbutton:hover {
+	background-color: rgba(18, 18, 18, 1.00);
+	transition: 0.5s;
+	transform: scale(0.9)
+}
+
+#review1 {
+	width: 400px;
+	height: 400px;
+	background: white;
+	box-shadow: 1px 1px 1px 1px lightgrey;
+	border-top: 2px solid orange;
+	border-left: 2px solid orange;
+	margin-top: 300px;
+	margin-left: 40px
+}
+
+.review {
+	font-size: 20px;
+	color: grey;
+	font-family: roboto regular;
+	margin-left: 30px;
+	margin-top: 40px;
+	line-height: 30px;
+	position: absolute
+}
+
+#reviewprofile1 {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin-left: 30px;
+	position: absolute;
+	margin-top: 280px;
+	border: 1px solid orange;
+	background: url("image/reviewprofile1.png")
+}
+
+.reviewname {
+	color: black;
+	font-family: roboto;
+	margin-left: 120px;
+	margin-top: 295px;
+	position: absolute;
+	font-size: 20px
+}
+
+.reviewwork {
+	color: orange;
+	font-family: roboto;
+	margin-left: 120px;
+	margin-top: 315px;
+	position: absolute;
+	font-size: 17px
+}
+
+#review2 {
+	width: 400px;
+	height: 400px;
+	background: white;
+	box-shadow: 1px 1px 1px 1px lightgrey;
+	border-top: 2px solid orange;
+	border-left: 2px solid orange;
+	margin-top: -400px;
+	margin-left: 480px
+}
+
+#reviewprofile2 {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin-left: 30px;
+	position: absolute;
+	margin-top: 280px;
+	border: 1px solid orange;
+	background: url("image/reviewprofile2.png")
+}
+
+#review3 {
+	width: 400px;
+	height: 400px;
+	background: white;
+	box-shadow: 1px 1px 1px 1px lightgrey;
+	border-top: 2px solid orange;
+	border-left: 2px solid orange;
+	margin-top: -400px;
+	margin-left: 920px
+}
+
+#reviewprofile3 {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin-left: 30px;
+	position: absolute;
+	margin-top: 280px;
+	border: 1px solid orange;
+	background: url("image/reviewprofile3.png")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#teambanner {
+	width: 1360px;
+	height: 500px;
+	background: url("image/teambanner.png")
+}
+
+#indexteam5 {
+	width: 300px;
+	height: 400px;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	;
+	background: white;
+	;
+	margin-top: 70px;
+	margin-left: 40px;
+	box-shadow: 1px 1px 1px 1px lightgrey
+}
+
+
+
+#indexteam5image {
+	width: 270px;
+	height: 200px;
+	background: url("image/indexteam5image.png");
+	position: absolute;
+	margin-left: 15px;
+	margin-top: 15px
+}
+
+#indexteam6 {
+	width: 300px;
+	height: 400px;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	position: absolute;
+	background: white;
+	;
+	margin-top: -400px;
+	margin-left: 370px;
+	box-shadow: 1px 1px 1px 1px lightgrey
+}
+
+#indexteam6image {
+	width: 270px;
+	height: 200px;
+	background: url("image/indexteam6image.png");
+	position: absolute;
+	margin-left: 15px;
+	margin-top: 15px
+}
+
+#indexteam7 {
+	width: 300px;
+	height: 400px;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	position: absolute;
+	background: white;
+	;
+	margin-top: -400px;
+	margin-left: 700px;
+	box-shadow: 1px 1px 1px 1px lightgrey
+}
+
+#indexteam7image {
+	width: 270px;
+	height: 200px;
+	background: url("image/indexteam7image.png");
+	position: absolute;
+	margin-left: 15px;
+	margin-top: 15px
+}
+
+#indexteam8 {
+	width: 300px;
+	height: 400px;
+	border-left: 2px solid orange;
+	border-top: 2px solid orange;
+	position: absolute;
+	background: white;
+	;
+	margin-top: -400px;
+	margin-left: 1030px;
+	box-shadow: 1px 1px 1px 1px lightgrey
+}
+
+#indexteam8image {
+	width: 270px;
+	height: 200px;
+	background: url("image/indexteam8image.png");
+	position: absolute;
+	margin-left: 15px;
+	margin-top: 15px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#blogbanner {
+	width: 1360px;
+	height: 500px;
+	background: url("image/blogbanner.png")
+}
+
+.blogbannerhead {
+	font-size: 55px;
+	color: white;
+	font-family: roboto;
+	text-align: center;
+	padding-top: 270px;
+	position: absolute;
+	padding-left: 510px
+}
+
+
+
+
+
+
+
+
+
+
+
+#contactbanner {
+	width: 1360px;
+	height: 500px;
+	background: url("image/contactbanner.png")
+}
+
+#contactinputback {
+	width: 1100px;
+	height: 740px;
+	border-radius: 10px;
+	background-color: rgba(13, 13, 13, 1.00);
+	margin-top: 100px;
+	margin-left: 120px
+}
+
+.contactinputbackhead {
+	font-size: 40px;
+	color: white;
+	position: absolute;
+	margin-top: 80px;
+	margin-left: 70px;
+	font-family: roboto
+}
+
+.contactinputbacksubhead {
+	font-size: 18px;
+	color: lightgrey;
+	position: absolute;
+	margin-top: 190px;
+	margin-left: 70px;
+	font-family: roboto regular;
+	line-height: 30px
+}
+
+
+
+
+
+#location {
+	width: 80px;
+	height: 80px;
+	background: rgba(17, 17, 17, 1.00);
+	position: absolute;
+	border-radius: 10px;
+	margin-left: 70px;
+	margin-top: 300px;
+	z-index: 1
+}
+
+#location:hover {
+	transform: translateY(-20%);
+	transition: 0.5s
+}
+
+.locationhead {
+	font-size: 22px;
+	color: red;
+	font-family: roboto;
+	position: absolute;
+	padding-left: 180px;
+	padding-top: 265px;
+	line-height: 120px
+}
+
+.locationsubhead {
+	font-size: 18px;
+	color: lightgrey;
+	font-family: roboto regular;
+	position: absolute;
+	padding-left: 180px;
+	padding-top: 295px;
+	line-height: 120px
+}
+
+.locationicon {
+	color: lightgray;
+	font-size: 32px;
+	padding-left: 22px;
+	padding-top: 21px
+}
+
+.phoneicon {
+	color: lightgray;
+	font-size: 32px;
+	padding-left: 29px;
+	padding-top: 21px
+}
+
+#phone {
+	width: 80px;
+	height: 80px;
+	background: rgba(17, 17, 17, 1.00);
+	position: absolute;
+	border-radius: 10px;
+	margin-left: 70px;
+	margin-top: 420px;
+	z-index: 1
+}
+
+#phone:hover {
+	transform: translateY(-20%);
+	transition: 0.5s
+}
+
+#email {
+	width: 80px;
+	height: 80px;
+	background: rgba(17, 17, 17, 1.00);
+	position: absolute;
+	border-radius: 10px;
+	margin-left: 70px;
+	margin-top: 540px;
+	z-index: 1
+}
+
+#email:hover {
+	transform: translateY(-20%);
+	transition: 0.5s
+}
+
+input[type="text"] {
+	width: 400px;
+	height: 60px;
+	border-radius: 6px;
+	border: none;
+	padding-left: 20px;
+	background: rgba(17, 17, 17, 1.00);
+	font-size: 17px;
+	margin-left: 600px;
+	position: absolute;
+	margin-top: 90px;
+	color: white
+}
+
+input[type="email"] {
+	width: 400px;
+	height: 60px;
+	border-radius: 6px;
+	border: none;
+	padding-left: 20px;
+	background: rgba(17, 17, 17, 1.00);
+	font-size: 17px;
+	margin-left: 600px;
+	position: absolute;
+	margin-top: 190px;
+	color: white
+}
+
+input[type="text1"] {
+	width: 400px;
+	height: 60px;
+	border-radius: 6px;
+	border: none;
+	padding-left: 20px;
+	background: rgba(17, 17, 17, 1.00);
+	font-size: 17px;
+	margin-left: 600px;
+	position: absolute;
+	margin-top: 290px;
+	color: white
+}
+
+input[type="message"] {
+	width: 400px;
+	height: 60px;
+	border-radius: 6px;
+	border: none;
+	padding-left: 20px;
+	background: rgba(17, 17, 17, 1.00);
+	font-size: 17px;
+	margin-left: 600px;
+	position: absolute;
+	margin-top: 390px;
+	padding-bottom: 80px;
+	color: white
+}
+
+input[type="submit"] {
+	width: 420px;
+	height: 70px;
+	border-radius: 6px;
+	border: none;
+	padding-left: 20px;
+	background: red;
+	font-size: 20px;
+	margin-left: 600px;
+	position: absolute;
+	margin-top: 580px;
+	color: white;
+	font-family: roboto
+}
+
+input[type="submit"]:hover {
+	background: orange;
+	transition: 0.5s
+}
+
+#map {
+	width: 1100px;
+	height: 300px;
+	background: grey;
+	border-radius: 10px;
+	margin-left: 120px;
+	margin-top: 100px
+}
+
+iframe {
+	border-radius: 10px
+}

@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>contact</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<script>
+
+	function newsletter() {
+		if (document.secondform.email.value == "") {
+			alert("enter plz  your email ");
+			document.secondform.email.focus();
+			return false;
+		}
+
+
+
+		return (true)
+
+
+	}
+
+
+
+
+
+
+
+
+
+	function validate() {
+		if (document.myform.name.value == "") {
+			alert("enter your name");
+			document.myform.name.focus();
+			return false;
+		}
+		if (document.myform.email.value == "") {
+			alert("enter your  email id");
+			document.myform.email.focus();
+			return false;
+		}
+		if (document.myform.subject.value == "") {
+			alert("enter your subject");
+			document.myform.subject.focus();
+			return false;
+		}
+		if (document.myform.message.value == "") {
+			alert("type a message");
+			document.myform.message.focus();
+			return false;
+		}
+		return (true);
+	}
+</script>
+
+<body>
+	<div id="head">
+
+		<div id="contactbanner">
+			<h1 class="aboutbannerhead">Contact Us</h1>
+			<p class="aboutbannersubhead">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+					style="color:orange">Home</b>/Contact</p>
+			<div id="aboutbannertop">
+				<h2 class="bannertopadd"><i class="fa-sharp fa-solid fa-location-dot"
+						style="color: orange"></i>&nbsp;&nbsp;99 Roving St., Big City, PKU 23456 &nbsp;&nbsp; <i
+						class="fa-solid fa-phone-volume" style="color: orange"></i>&nbsp;&nbsp;Hot Line : 123-234-1234
+				</h2>
+				<div id="bannertopfb">
+					<h1 class="bannertopfbicon"><i class="fa-brands fa-facebook" style="color: white"></i></h1>
+				</div>
+				<div id="bannertopinsta">
+					<h1 class="bannertopfbicon"><i class="fa-brands fa-instagram" style="color: white"></i></h1>
+				</div>
+				<div id="bannertoptweet">
+					<h1 class="bannertopfbicon"><i class="fa-brands fa-twitter" style="color: white"></i></h1>
+				</div>
+				<div id="bannertoppin">
+					<h1 class="bannertopfbicon"><i class="fa-brands fa-pinterest" style="color: white"></i></h1>
+				</div>
+			</div>
+
+			<div id="aboutnav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="project.html">Project</a></li>
+					<li><a href="service.html">Service</a></li>
+					<li><a href="#">Pages&nbsp;<i class="fa-sharp fa-solid fa-chevron-down"
+								style="color: white"></i></a>
+						<ul>
+							<li><a href="team.html">Team</a></li>
+							<li><a href="blog.html">Blog</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html" style="color: white">Contact us</a></li>
+				</ul>
+
+				<div id="logo"></div>
+			</div>
+		</div>
+
+		<div id="contactinputback">
+			<h1 class="contactinputbackhead">Drop Us A Message <br>For Any Query</h1>
+			<p class="contactinputbacksubhead">Lorem ipsum dolor sit amet consectetuer adipiscing<br> elitenean
+				commodoligula egetmassa</p>
+			<div id="location">
+				<h1 class="locationicon"><i class="fa-solid fa-map-location-dot"></i></h1>
+			</div>
+			<div id="phone">
+				<h1 class="phoneicon"><i class="fa-solid fa-mobile-screen-button"></i></h1>
+			</div>
+			<div id="email">
+				<h1 class="locationicon"><i class="fa-solid fa-envelope-open-text"></i></h1>
+			</div>
+			<h1 class="locationhead">Where We Are<br>Phone:<br>Email:</h1>
+			<p class="locationsubhead">121 King Street Melbourne, 3000, Australia<br>+1 234 567 89 0 I +1 234 567 89
+				0<br>support@redshield.com</p>
+			<form name="myform" action="#" onSubmit="return(validate())">
+				<input type="text" name="name" placeholder="Your Name">
+				<input type="email" name="email" placeholder="Your Email">
+				<input type="text1" name="subject" placeholder="Subject">
+				<input type="message" name="message" placeholder="Your Message">
+				<input type="submit" value="Send Message">
+			</form>
+		</div>
+		<div id="map">
+
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55969.30696780939!2d77.07999633125002!3d28.746978000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01de7a9abe53%3A0x390dda7272afa750!2sR.P%20BOILER!5e0!3m2!1sen!2sin!4v1679770879321!5m2!1sen!2sin"
+				width="1100" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+
+		<div id="indexnewsletter">
+			<div id="indexnewsletterimage"></div>
+			<h1 class="indexnewsletterhead">Subscribe Our Newsletter.</h1>
+			<form name="secondform" action="#">
+				<input type="email" name="email" placeholder="Your Email Here">
+
+				<button class="newsletterbutton" onClick="return(newsletter())">SUBCRIBE NOW &nbsp;<i
+						class="fa-solid fa-arrow-right-long"></i></button>
+
+			</form>
+
+
+		</div>
+		<div id="indexfooter"><br><br><br><br><br><br><br><br><br><br><br><br>
+			<div id="logo"></div>
+
+			<p class="footerogoabout">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Ut elit tellus,
+				luctus
+				nec ullamcorper mattis, pulvinar <br>dapibus leo.</p>
+			<h1 class="footerhead">Quick-Links Our-Services Articles-News</h1>
+			<hr class="quick">
+			<hr class="service">
+			<hr class="news">
+			<p class="quickabout"><b style="color:orange"><i
+						class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;Home<br><b style="color:orange"><i
+						class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;About Us<br><b style="color:orange"><i
+						class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;Services<br><b style="color:orange"><i
+						class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;FAQs<br><b style="color:orange"><i
+						class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;Blog</p>
+			<p class="serviceabout"><b style="color:orange"><i
+						class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;Hydraulic Fracturing.<br><b
+					style="color:orange"><i class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;Enhance Oil
+				Recovery.<br><b style="color:orange"><i class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;Oil &
+				Gas
+				Marketing.<br><b style="color:orange"><i class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;Oil
+				Explor
+				& Production.<br><b style="color:orange"><i
+						class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;Renewable Enery.<br><b
+					style="color:orange"><i class="fa-solid fa-arrow-right-long"></i></b>&nbsp;&nbsp;Thermal Power.</p>
+			<h2 class="newsabout">
+				The Evolving Landscape of Oil and Gas<br>Financing: Trends and Innovation<br><br><br>Driving Efficency
+				and
+				Productivity: Best<br>Practice for Oil and Gas Operation
+			</h2>
+			<p class="newsdate">23 February 2023<br>25 February 2023</p>
+
+			<p class="copyright">Copyright 2023@ All Right Reserved Design by Manoj Singh</p>
+		</div>
+		<hr class="footerline">
+
+
+
+
+
+
+
+
+
+
+	</div>
+</body>
+
+</html>
