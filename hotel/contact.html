@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>contact</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<script>
+	function validate(){
+	if(document.myform.name.value=="")	
+	{
+	alert("enter you name");
+		document.myform.name.focus();
+		return false;
+	}
+	
+	if(document.myform.email.value=="")	
+	{
+	alert("enter you email id");
+		document.myform.email.focus();
+		return false;
+	}
+	if(document.myform.message.value=="")	
+	{
+	alert("plz enter the message");
+		document.myform.message.focus();
+		return false;
+	}
+	return(true);
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("shownav").style.top = "0";
+  } else {
+    document.getElementById("shownav").style.top = "-70px";
+  }
+}
+	
+	</script>
+<body style="background:rgba(247,239,239,1.00)">
+	<div id="head">
+		<div id="contactbanner">
+			
+			<h1 class="bannerhead"><br>CONTACT<br>
+OUR HOTEL</h1>
+		
+			<div id="logo">
+				<h1 class="logohead">MDN</h1>
+				<p class="logosubhead">HOTEL</p>
+			</div>
+			<div id="nav">
+				<a href="booknow.html"><div id="bookbutton">
+					<h1 class="bookbutton">BOOK NOW</h1>
+				</div></a>
+				<ul id="navbaar1">
+					<li><a href="index.html" id="navbaar">Home</a></li>
+					<li>
+						<a href="booknow.html" id="navbaar">Our Rooms&nbsp;&nbsp;
+							<i class="fa-sharp fa-solid fa-chevron-down"></i>
+						</a>
+						<ul>
+							<li><a href="superior-room.html" id="navbaar">Superior Room</a></li>
+							<li><a href="deluxe-room.html"id="navbaar">Deluxe Room</a></li>
+							<li><a href="signature-room.html" id="navbaar">Signature Room</a></li>
+						</ul>
+					</li>
+					<li><a href="our-experience.html" id="navbaar">Experience</a></li>
+					<li><a href="contact.html" id="navbaar">Contact</a></li>
+				</ul>
+			</div>
+			<div id="shownav">
+		<a href="booknow.html"><div id="navbookbutton">
+					<h1 class="navbookbutton">BOOK NOW</h1>
+				</div>
+			</a>
+				<div id="navlogo">
+				<h1 class="navlogohead">MDN</h1>
+				<p class="navlogosubhead">HOTEL</p>
+			</div>
+		 <a href="index.html" id="shownavunderline">Home</a>
+  <a href="booknow.html" id="shownavunderline">Our Rooms</a>
+	 <a href="our-experience.html" id="shownavunderline">experience</a>
+		 <a href="contact.html" id="shownavunderline">Contact</a>
+  
+		</div>
+		</div>
+		
+		<h1 class="add">Address<br><br><br><br><br>Phone<br><br><br><br><br><br><br><br>Email</h1>
+		<p class="addabout">Via Serlas 546, 6700<br>
+St. Moritz India<br><br><br><br><br>Hotel & Restaurant<br>
+41 (0)54 2344 00<br><br><br>
+
+Wellness & Spa<br>
+41 (0)54 2344 01<br><br><br><br><br>princenegi2017@gmai.com</p>
+		<div id="contactback">
+		<div id="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14004.948968632387!2d77.2043069078125!3d28.6526143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd7ca9964681%3A0x6d882bc10d3ce834!2sMd%20Hotel!5e0!3m2!1sen!2sin!4v1678961809776!5m2!1sen!2sin" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			
+			
+			
+			
+			</div>
+		
+		
+		</div>
+		<div id="expmid2">
+			<h1 class="expmid2head">-- DO YOU HAVE
+
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ANY QUESTIONS?
+			</h1>
+			
+		<div id="expmid2image">
+			<div id="expmid2image1"></div>
+			
+			</div>
+		<p class="inputtext">Your name<br>Your email<br>Your message</p>
+			<form name="myform" action="#" onSubmit="return(validate());">
+			<input type="text" name="name">
+			<input type="email" name="email">
+			<input type="message" name="message">
+			<input type="submit" name="SUBMIT">
+			</form>
+		
+		</div>
+			<div id="expmid3">
+			<h1 class="socialhead" style="color: black">-- SOCIALS</h1>
+			<h1 class="socialicon"><i class="fa-brands fa-twitter"></i>
+				<i class="fa-brands fa-facebook-f"></i>
+				<i class="fa-brands fa-instagram"></i>
+
+				<i class="fa-sharp fa-solid fa-plane"></i>
+			</h1>
+			<div id="indexmid1image"></div>
+			<div id="indexmid1image1"></div>
+			<div id="indexmid1image2"></div>
+			<div id="indexmid1image3"></div>
+
+
+
+
+		</div>
+		<div id="indexfooter">
+			<div id="footerlogo">
+				<h1 class="logohead">MDN</h1>
+				<p class="logosubhead">HOTEL</p>
+			</div>
+			<p class="footerlogo">Via Serlas 546, 6700<br>
+				St. Moritz India<br><br>
+
+				41 (0)54 2344 00<br>
+				wwwMDNHOTEL.com
+			</p>
+			<p class="thehotelfooter">The Hotel <br>Rooms & Suites <br>Experience <br>Contact Us</p>
+			<p class="restaurentfooter">Restaurent<br>Offer <br>Jobs<br>Seminar</p>
+			<p class="footerheadline">“Offer more than a gift <br>voucher, offer an experience”</p>
+			<a href="booknow.html"><button class="footerbutton">BOOK NOW</button></a>
+			<hr class="line">
+			<p class="footercopyright">@ Copyright Reserve By Princenegi</p>
+
+
+		</div>
+
+		
+		
+		
+		
+	</div>
+</body>
+</html>

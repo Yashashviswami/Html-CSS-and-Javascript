@@ -1,0 +1,1554 @@
+@font-face {
+	font-family: roboto;
+	src: url("font/Roboto (1)/Roboto-Regular.ttf");
+	src: url("font/Roboto (1)/Roboto-Black.ttf")
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	outline: 0px
+}
+
+#head {
+	width: 1360px;
+	height: auto;
+	margin: 0 auto;
+	position: relative
+}
+
+#banner {
+	width: 1360px;
+	height: 650px;
+	background: url("image/banner.png");
+	background-attachment: fixed
+}
+
+.bannersubhead {
+	font-family: roboto;
+	font-size: 17px;
+	color: white;
+	padding-left: 120px;
+	padding-top: 160px;
+	position: absolute
+}
+
+.bannerhead {
+	font-family: roboto;
+	font-size: 70px;
+	color: white;
+	padding-left: 120px;
+	padding-top: 195px;
+	position: absolute;
+	line-height: 75px;
+	letter-spacing: 2px
+}
+
+.bannerbutton {
+	width: 200px;
+	height: 55px;
+	background: transparent;
+	border: 1px solid white;
+	position: absolute;
+	margin-left: 120px;
+	margin-top: 460px;
+	color: white;
+	font-family: roboto;
+	transition: 0.5s;
+}
+
+.bannerbutton:hover {
+	transition: 0.5s;
+	transform: translate(0, -15%)
+}
+
+#nav {
+	width: 950px;
+	height: 80px;
+	position: absolute;
+	margin-left: 300px;
+	background: transparent;
+	border-bottom: 0.3px solid lightgrey;
+    gap: 50px;
+}
+
+#nav #navbaar1{
+	display: flex;
+	gap: 30px;
+	justify-content:space-between;
+}
+
+#navbaar {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: .5px;
+    padding: .20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#navbaar:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0px;
+    background: white;
+    transition: .5s;
+}
+
+#navbaar:after {
+    left: 0;
+    bottom: -8px;
+}
+
+#navbaar:hover {
+    color: white
+}
+
+#navbaar:hover:after {
+    width: 100%;
+}
+
+#bookbutton {
+	width: 140px;
+	height: 45px;
+	background: black;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 810px;
+	transition: 0.5s;
+}
+
+#bookbutton:hover {
+	background: transparent;
+	border: 1px solid white;
+	transition: 0.5s
+}
+
+.bookbutton {
+	font-family: roboto;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 15px
+}
+
+#logo {
+	width: 105px;
+	height: 105px;
+	background: black;
+	margin-left: 120px;
+	position: absolute
+}
+
+.logohead {
+	font-family: roboto;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 20px;
+	font-weight: bolder
+}
+
+.logosubhead {
+	font-family: roboto regular;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	padding-top: 5px;
+	font-weight: 100px
+}
+
+ul {
+	margin-left: 0px;
+	margin-top: 35px;
+	position: absolute;
+	transition: 0.5s;
+
+}
+
+ul li {
+	list-style: none;
+	display: inline
+}
+
+ul li a {
+	color: white;
+	font-size: 15px;
+	font-family: roboto;
+	text-decoration: none;
+	padding: 10px
+}
+
+ul li ul li {
+	display: none;
+	margin-left: 0px;
+	margin-top: -24px;
+	font-size: 14px;
+	width: 180px;
+	height: 40px;
+	padding-top: 20px;
+	transition: 0.5s;
+	padding-left: 15px
+}
+
+ul li:hover ul li {
+	display: block;
+
+	background: black;
+	transition: 0.5s
+}
+	#navbookbutton {
+	width: 140px;
+	height: 45px;
+	background: black;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 840px;
+	transition: 0.5s;
+}
+
+#navbookbutton:hover {
+	background: transparent;
+	border: 1px solid black;
+	transition: 0.5s;
+	color: black
+}
+
+.navbookbutton {
+	font-family: roboto;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	margin-top: -12px;
+}
+		#navlogo {
+	width: 105px;
+	height: 70px;
+	background: black;
+	margin-left: -150px;
+	position: absolute
+}
+
+.navlogohead {
+	font-family: roboto;
+	color: white;
+	font-size: 17px;
+	text-align: center;
+	margin-top: 15px;
+	font-weight: bolder
+}
+
+.navlogosubhead {
+	font-family: roboto regular;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 2px;
+	font-weight: 100px
+}
+
+	#shownav{
+  background-color: white;
+  position: fixed;
+  top: -70px;
+  width: 1090px;
+  
+  transition: top 0.3s;
+	height: 70px;
+	display: inline-flex;
+	gap:30px;
+	padding-left:270px;
+	z-index: 1	
+	
+}
+
+#shownav a{
+  
+  
+  color:black;
+  font-family: roboto;
+  text-decoration: none;
+  font-size: 15px;;
+	line-height: 70px;
+	font-family: roboto;
+	
+	
+		
+}
+#shownavunderline {
+    position: relative;
+    text-decoration: none;
+    
+    font-size: 18px;
+    letter-spacing: .5px;
+    padding: .20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#shownavunderline:after {
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    width: 0px;
+    background:black;
+    transition: .5s;
+	left: 0;
+    top:45px;
+}
+
+#shownavunderline:hover:after {
+    width: 100%;
+}
+
+#history {
+	width: 680px;
+	height: 680px;
+	background: white
+}
+
+.historyhead {
+	font-family: roboto;
+	font-size: 50px;
+	color: rgba(40, 40, 40, 1.00);
+	position: absolute;
+	padding-left: 90px;
+	padding-top: 80px
+}
+
+.historysubhead {
+	font-family: roboto regular;
+	font-size: 18px;
+	color: rgba(40, 40, 40, 1.00);
+	position: absolute;
+	padding-left: 154px;
+	padding-top: 230px;
+	letter-spacing: 1px;
+	line-height: 27px
+}
+
+#historyimage {
+	width: 450px;
+	height: 570px;
+	background: url("image/historyimage.png");
+	margin-top: -760px;
+	margin-left: 800px;
+	border: 5px solid white
+}
+
+.historyimagehead {
+	font-size: 60px;
+	font-family: roboto;
+	position: absolute;
+	padding-left: 10px;
+	padding-top: 600px;
+	color: #626476;
+	word-spacing: 115px
+}
+
+.historyimagesubhead {
+	font-size: 14px;
+	font-family: roboto;
+	position: absolute;
+	padding-left: 0px;
+	padding-top: 670px;
+	color: black;
+	word-spacing: 105px
+}
+
+#indexmid {
+	width: 1360px;
+	height: 850px;
+	background-color: rgba(19, 19, 19, 1.00);
+	margin-top: 180px
+}
+
+.indexmidsubhead {
+	font-family: roboto regular;
+	font-size: 18px;
+	color: white;
+	position: absolute;
+	padding-left: 780px;
+	padding-top: 120px;
+	letter-spacing: 1px;
+	line-height: 27px
+}
+
+.indexmidcontact {
+	font-family: roboto;
+	font-size: 20px;
+	color: white;
+	position: absolute;
+	padding-left: 780px;
+	padding-top: 590px;
+	letter-spacing: 0.5px;
+	line-height: 27px
+}
+
+.indexmidbutton {
+	width: 150px;
+	height: 55px;
+	background: transparent;
+	border: 1px solid white;
+	position: absolute;
+	margin-left: 780px;
+	margin-top: 520px;
+	color: white;
+	font-family: roboto;
+	transition: 0.5s;
+	z-index: 1
+}
+
+.indexmidbutton:hover {
+	transition: 0.5s;
+	;
+	transform: translate(0, -15%)
+}
+
+#indexmidimage1 {
+	width: 700px;
+	height: 500px;
+	background: url("image/indexmidimage1.png");
+	position: absolute;
+	margin-top: 250px
+}
+
+#indexmidimage2 {
+	width: 300px;
+	height: 230px;
+	background: url("image/indexmidimage2.png");
+	position: absolute;
+	margin-top: 570px;
+	margin-left: 310px;
+	border: 2px solid white;
+	transition: 0.5s
+}
+
+#indexmid:hover #indexmidimage2 {
+	transform: translate(0, -15%);
+	transition: 0.5s all ease-in-out
+}
+
+.amentieshead {
+	font-family: roboto;
+	font-size: 50px;
+	color: rgba(40, 40, 40, 1.00);
+	position: absolute;
+	padding-left: 90px;
+	padding-top: 50px
+}
+
+.amentiessubhead {
+	font-family: roboto regular;
+	font-size: 18px;
+	color: black;
+	position: absolute;
+	padding-left: 80px;
+	padding-top: 60px;
+	letter-spacing: 1px;
+	line-height: 27px
+}
+
+#amenties {
+	width: 680px;
+	height: 720px;
+	background: white;
+	margin-left: 680px
+}
+
+#amentiesfitnes {
+	width: 130px;
+	height: 80px;
+	background: url("image/amentiesfitnes.png");
+	position: absolute;
+	margin-left: 80px;
+	margin-top: 450px
+}
+
+.amentiesfitness {
+	font-size: 16px;
+	font-family: roboto regular;
+	color: black;
+	text-align: center;
+	padding-top: 80px
+}
+
+#amentiesjaccuzi {
+	width: 130px;
+	height: 80px;
+	background: url("image/amentiesjaccuzi.png");
+	position: absolute;
+	margin-left: 270px;
+	margin-top: 450px
+}
+
+#amentiespool {
+	width: 130px;
+	height: 80px;
+	background: url("image/amentiespool.png");
+	position: absolute;
+	margin-left: 440px;
+	margin-top: 450px
+}
+
+#amentiesspa {
+	width: 130px;
+	height: 80px;
+	background: url("image/amentiesspa.png");
+	position: absolute;
+	margin-left: 80px;
+	margin-top: 580px
+}
+
+#amentiesgarden {
+	width: 130px;
+	height: 80px;
+	background: url("image/amentiesgarden.png");
+	position: absolute;
+	margin-left: 270px;
+	margin-top: 580px
+}
+
+#amentiescity {
+	width: 130px;
+	height: 80px;
+	background: url("image/amentiescity.png");
+	position: absolute;
+	margin-left: 440px;
+	margin-top: 580px
+}
+
+#amentiesimage {
+	width: 680px;
+	height: 400px;
+	background: url("image/amentiesimage.png");
+	margin-left: 0px;
+	margin-top: -500px
+}
+
+#amentiesimage2 {
+	width: 300px;
+	height: 200px;
+	background: url("image/amentiesimage2.png");
+	position: absolute;
+	margin-top: 250px;
+	margin-left: 280px;
+	border: 2px solid white;
+	transition: 0.5s
+}
+
+#amentiesimage:hover #amentiesimage2 {
+	transform: translate(0, -15%);
+	transition: 0.5s all ease-in-out
+}
+
+.roomhead {
+	font-family: roboto;
+	font-size: 50px;
+	color: rgba(40, 40, 40, 1.00);
+
+	position: absolute;
+	padding-left: 90px;
+	padding-top: 170px
+}
+
+.roombutton {
+	width: 200px;
+	height: 55px;
+	background: transparent;
+	border: 1px solid black;
+	position: absolute;
+	margin-left: 1060px;
+	margin-top: 210px;
+	color: black;
+	font-family: roboto;
+	transition: 0.5s;
+	z-index: 1
+}
+
+.roombutton:hover {
+	transition: 0.5s;
+	;
+	transform: translate(0, -15%)
+}
+
+#indexroomimage {
+	width: 590px;
+	height: 400px;
+	background: url("image/indexroomimage.png");
+	margin-top: 350px;
+	margin-left: 60px
+}
+
+.roomname {
+	position: absolute;
+	color: black;
+	font-family: roboto regular;
+	font-size: 32px;
+	padding-top: 410px;
+	letter-spacing: 2px
+}
+
+.roomstart {
+	position: absolute;
+	color: black;
+	font-family: roboto regular;
+	font-size: 18px;
+	padding-top: 420px;
+	letter-spacing: 2px;
+	padding-left: 545px
+}
+
+.roomabout {
+	position: absolute;
+	color: black;
+	font-family: roboto regular;
+	font-size: 20px;
+	padding-top: 455px;
+	letter-spacing: 2px
+}
+
+.roomrate {
+	position: absolute;
+	color: black;
+	font-family: roboto regular;
+	font-size: 40px;
+	padding-top: 445px;
+	letter-spacing: 0px;
+	padding-left: 500px
+}
+
+#indexroomimage1 {
+	width: 590px;
+
+	height: 400px;
+	background: url("image/indexroomimage1.png");
+	margin-top: -400px;
+	margin-left: 700px;
+}
+
+.socialhead {
+	font-family: roboto;
+	font-size: 50px;
+	color: rgba(40, 40, 40, 1.00);
+	position: absolute;
+	padding-left: 90px;
+	padding-top: 80px
+}
+
+.socialicon {
+	font-family: roboto;
+	font-size: 25px;
+	color: rgba(40, 40, 40, 1.00);
+	position: absolute;
+	padding-left: 1100px;
+	padding-top: 90px;
+	letter-spacing: 10px
+}
+
+#indexmid1 {
+	width: 1360px;
+	height: 600px;
+	background: white;
+	margin-top: 200px
+}
+
+#indexmid1image {
+	width: 340px;
+	height: 400px;
+	background: url("image/indexmid1image.png");
+	margin-top: 200px;
+	margin-left: 0px;
+	position: absolute
+}
+
+#indexmid1image1 {
+	width: 340px;
+	height: 400px;
+	background: url("image/indexmid1image1.png");
+	margin-top: 200px;
+	margin-left: 340px;
+	position: absolute
+}
+
+#indexmid1image2 {
+	width: 340px;
+	height: 400px;
+	background: url("image/indexmid1image2.png");
+	margin-top: 200px;
+	margin-left: 680px;
+	position: absolute;
+}
+
+#indexmid1image3 {
+	width: 340px;
+	height: 400px;
+	background: url("image/indexmid1image3.png");
+	margin-top: 200px;
+	margin-left: 1020px;
+	position: absolute
+}
+
+#indexfooter {
+	width: 1360px;
+	height: 490px;
+	background: black;
+}
+
+#footerlogo {
+	position: absolute;
+	margin-top: 70px;
+	margin-left: 120px
+}
+
+.footerlogo {
+	font-size: 18px;
+	color: white;
+	text-align: left;
+	position: absolute;
+	padding-left: 120px;
+	padding-top: 190px;
+	font-family: roboto regular;
+	line-height: 27px
+}
+
+.thehotelfooter {
+	font-size: 18px;
+	color: white;
+	text-align: left;
+	position: absolute;
+	padding-left: 450px;
+	padding-top: 80px;
+	font-family: roboto regular;
+
+	line-height: 50px
+}
+
+.restaurentfooter {
+	font-size: 18px;
+	color: white;
+	text-align: left;
+	position: absolute;
+	padding-left: 730px;
+	padding-top: 80px;
+	font-family: roboto regular;
+	line-height: 50px
+}
+
+.footerheadline {
+	font-size: 25px;
+	color: white;
+	text-align: left;
+	position: absolute;
+
+	padding-left: 930px;
+	padding-top: 85px;
+	font-family: roboto;
+	line-height: 40px
+}
+
+.footerbutton {
+	width: 150px;
+	height: 55px;
+	background: transparent;
+	border: 1px solid white;
+	position: absolute;
+	margin-left: 950px;
+	margin-top: 210px;
+	color: white;
+	font-family: roboto;
+	transition: 0.5s;
+	z-index: 1
+}
+
+.footerbutton:hover {
+	transition: 0.5s;
+	;
+	transform: translate(0, -15%)
+}
+
+hr.line {
+	width: 100%;
+	margin-top: 380px;
+	position: absolute;
+	border: 0.3px solid lightgrey;
+}
+
+.footercopyright {
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	;
+	padding-top: 430px;
+	font-family: roboto regular;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#experiencebanner {
+	width: 1360px;
+	height: 650px;
+	background:url("image/experiencebanner.png");
+	background-attachment: fixed
+}
+
+#experiencespabox{width:680px;
+	height:950px;
+	background:white}
+.experiencespaboxsubhead {
+	font-family: roboto regular;
+	font-size: 18px;
+	color: rgba(40, 40, 40, 1.00);
+	position: absolute;
+	padding-left: 154px;
+	padding-top: 180px;
+	letter-spacing: 1px;
+	line-height: 27px
+}
+#expspaimage{width:440px;
+	height:320px;
+	background:url("image/expspaimage.png");
+	position:absolute;margin-left:150px;
+	margin-top:540px}
+#expparkimage{width:450px;
+	height:320px;
+	background:url("image/expparkimage.png");
+	position:absolute;
+	margin-left:800px;
+	margin-top:-850px;
+	border:5px solid white}
+#detail{width: 450px;height: 300px;position: absolute;margin-top: -480px}
+details > summary{padding: 20px;
+  width: 420px;
+  background-color:white;
+  border: none;
+  
+  cursor: pointer;;
+	font-family: roboto regular
+;margin-left: 800px;
+}
+details > p {
+  background-color: transparent;
+  padding: 4px;
+  margin: 20px;
+  
+	width:436px;
+	padding-left: 20px;
+		font-family: roboto regular;
+	;margin-left: 800px;
+
+
+}
+
+
+#exptrip{width:730px;
+	height:500px;
+	background:url("image/exptrip.png");
+	margin-left:550px;
+	margin-top:80px}
+.exptripbutton{width: 150px;
+	height: 55px;
+	background: black;
+	border: none;
+	color: white;
+	font-family: roboto;
+	margin-left: 154px;
+	position: absolute;
+	margin-top: 440px}
+.exptripbutton:hover{transform: translate(0,-15%);
+	transition: 0.5s all ease-in-out}
+#expmid{width:1360px;
+	height:640px;
+	background:white;
+	margin-top:50px}
+.expmidhead {
+	font-family: roboto;
+	font-size: 50px;
+	color: rgba(40, 40, 40, 1.00);
+
+	position: absolute;
+	padding-left: 790px;
+	padding-top: 100px
+}
+.expmidsubhead {
+	font-family: roboto regular;
+	font-size: 18px;
+	color: rgba(40, 40, 40, 1.00);
+	position: absolute;
+	padding-left: 855px;
+	padding-top: 250px;
+	letter-spacing: 1px;
+	line-height: 27px
+}
+.expmidbutton{width: 150px;
+	height: 55px;
+	background: black;
+	border: none;
+	color: white;
+	font-family: roboto;
+	
+	margin-left: 855px;
+	position: absolute;
+	margin-top: 420px}
+.expmidbutton:hover{transform: translate(0,-15%);
+	transition: 0.5s all ease-in-out}
+#expmeal{width:720px;
+	height:500px;
+	background:url("image/expmeal.png");
+	margin-top:70px;
+	position:absolute}
+#expmid1{width:1360px;
+	height:780px;
+	background-color:rgba(19,19,19,1.00);}
+#expmid1image1{width:380px;
+	height:270px;
+	background:url("image/expmid1image1.png");
+	position:absolute;
+	margin-left:60px;
+	margin-top:240px;}
+#expmid1image1:hover{filter: brightness(70%);transition: 0.5s all ease-in-out}
+.expmid1image1head{font-size:25px;
+	color: white;
+	position:absolute;
+	padding-top: 290px;
+	font-family: roboto}
+.expmid1image1subhead{font-size:15px;
+	color:lightgrey;
+	position:absolute;
+	padding-top: 340px;
+	font-family: roboto;
+	word-spacing: 2px }
+.expmid1image1button{width: 100px;
+	background:white;
+	height: 42px;
+	position: absolute;
+	margin-left: 250px;
+	margin-top: 250px;
+	border: none;
+	color: black;
+	font-family: roboto regular}
+#expmid1image1:hover .expmid1image1button{background: blue;
+	color: white;
+	transition: 0.5s all ease-in-out}
+#expmid1image2{width:380px;
+	height:270px;
+	background:url("image/expmid1image2.png");
+	position:absolute;
+	margin-left:480px;
+	margin-top:240px}
+
+#expmid1image2:hover{filter: brightness(70%);transition: 0.5s all ease-in-out}
+#expmid1image2:hover .expmid1image1button{background: blue;
+	color: white;
+	transition: 0.5s all ease-in-out}
+#expmid1image3{width:380px;
+	height:270px;
+	background:url("image/expmid1image3.png");
+	position:absolute;
+	margin-left:900px;
+	margin-top:240px}
+#expmid1image3:hover{filter: brightness(70%);transition: 0.5s all ease-in-out}
+#expmid1image3:hover .expmid1image1button{background: blue;
+	color: white;
+	transition: 0.5s all ease-in-out}
+#expmid2{width:1360px;
+	height:720px;
+	background-color:white;}
+.expmid2head {
+	font-family: roboto;
+	font-size: 50px;
+	color: rgba(40, 40, 40, 1.00);
+	
+	padding-left: 90px;
+	padding-top: 80px
+}
+#expmid2 input[type="text"]{width: 500px;
+	height: 100px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1.2px solid black;
+	;margin-left: 100px;
+	position: absolute;
+	margin-top: 30px;
+	background: transparent}
+#expmid2 input[type="email"]{width: 500px;
+	height: 100px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1.2px solid black;
+	;margin-left: 100px;
+	position: absolute;
+	margin-top: 150px;
+	background: transparent}
+#expmid2 input[type="message"]{width: 500px;
+	height: 120px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1.2px solid black;
+	;margin-left: 100px;
+	position: absolute;
+	margin-top: 270px;
+	background: transparent}
+#expmid2 input[type="submit"]{width: 140px;
+	height: 45px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1.2px solid black;
+	;margin-left: 100px;
+	position: absolute;
+	margin-top: 420px;
+	background: black;
+	color: white;
+	font-family: roboto;
+	font-size: 17px}
+#expmid2 input[type="submit"]:hover{background: #1A1919}
+.inputtext{font-size: 18px;
+	color: #292727;
+	position: absolute;
+	margin-left: 100px;
+	font-family: roboto regular;
+	margin-top: 30px;
+	line-height: 110px}
+#expmid2image{width:350px;
+	height:480px;
+	background:url("image/expmid2image.png");
+	margin-top:-100px;
+	margin-left:900px;
+	position:absolute}
+#expmid2image1{width:320px;
+	height:230px;
+	background:url("image/expmid2image1.png");
+	margin-top:350px;
+	margin-left:-150px;
+	position:absolute;
+	border:2px solid white;
+	transition: 0.5s all ease-in-out}
+#expmid2:hover #expmid2image1{transform: translate(0,-15%);
+	transition: 0.5s all ease-in-out}
+#expmid3 {
+	width: 1360px;
+	height: 600px;
+	background: white;
+	margin-top: 0px
+}
+
+
+
+
+
+
+
+
+
+
+#contactbanner {
+	width: 1360px;
+	height: 650px;
+	background:url("image/contactbanner.png");
+	background-attachment: fixed
+}
+#contactback{width:800px;
+	height:650px;
+	background:white;
+	margin-left:560px}
+.add{font-size: 25px;
+	color: black;
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 100px;
+	font-family: roboto regular;}
+.addabout{font-size: 20px;
+	color: black;
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 160px;
+	font-family: roboto regular; }
+#map{width:800px;
+	height:500px;
+	background:red;
+	position:absolute;
+	margin-top:80px;
+	margin-left:-80px;
+border:4px solid white}
+
+
+
+
+
+
+
+
+
+
+
+
+#booknowbanner {
+	width: 1360px;
+	height: 650px;
+	background: url("image/booknowbanner.png");
+	background-attachment: fixed
+}
+#booknowmid{width:1360px;
+	background:white;
+	height:450px}
+#facilitesbox{width:500px;
+	height:270px;
+	;position:absolute;
+	margin-top:60px;
+	margin-left:690px}
+
+#bookfitnes {
+	width: 130px;
+	height: 80px;
+	background: url("image/amentiesfitnes.png");
+	position: absolute;
+	margin-left: 30px;
+	margin-top: 0px
+}
+
+.amentiesfitness {
+	font-size: 16px;
+	font-family: roboto regular;
+	color: black;
+	text-align: center;
+	padding-top: 80px
+}
+
+#bookjaccuzi {
+	width: 130px;
+	height: 80px;
+	background: url("image/amentiesjaccuzi.png");
+	position: absolute;
+	margin-left: 180px;
+	margin-top: 0px
+}
+
+#bookpool {
+	width: 130px;
+	height: 80px;
+	background: url("image/amentiespool.png");
+	position: absolute;
+	margin-left: 330px;
+	margin-top:0px
+}
+
+#bookspa {
+	width: 130px;
+	height: 80px;
+	background: url("image/amentiesspa.png");
+	position: absolute;
+	margin-left: 30px;
+	margin-top: 140px
+}
+
+#bookgarden {
+	width: 130px;
+	height: 80px;
+	background: url("image/amentiesgarden.png");
+	position: absolute;
+	margin-left: 180px;
+	margin-top: 140px
+}
+
+#bookcity {
+	width: 130px;
+	height: 80px;
+	background: url("image/amentiescity.png");
+	position: absolute;
+	margin-left: 330px;
+	margin-top: 140px
+}
+#booknowmid1{width:1360px;
+	height:820px;
+	background:transparent}
+#booknowmid1image{width:760px;
+	height:530px;
+	background:url("image/booknowmid1image.png");
+	margin-left: 600px;
+	margin-top: 60px;
+	position: absolute}
+.booknowmid1button{width: 240px;
+	height: 55px;
+	background: black;
+	border: none;
+	color: white;
+	font-family: roboto;
+	margin-left: 154px;
+	position: absolute;
+	margin-top: 440px}
+.booknowmid1button:hover{transform: translate(0,-15%);
+	transition: 0.5s all ease-in-out}
+#booknowmid130 {
+	width: 130px;
+	height: 80px;
+	background: url("image/booknowmid130.png");
+	position: absolute;
+	margin-left: 150px;
+	margin-top: 650px
+}
+
+.amentiesfitness {
+	font-size: 16px;
+	font-family: roboto regular;
+	color: black;
+	text-align: center;
+	padding-top: 80px
+}
+
+#booknowmid1bed {
+	width: 130px;
+	height: 80px;
+	background: url("image/booknowmid1bed.png");
+	position: absolute;
+	margin-left: 330px;
+	margin-top: 650px
+}
+
+#booknowmid1washer {
+	width: 130px;
+	height: 80px;
+	background: url("image/booknowmid1washer.png");
+	position: absolute;
+	margin-left: 510px;
+	margin-top:650px
+}
+
+#booknowmid1tv {
+	width: 130px;
+	height: 80px;
+	background: url("image/booknowmid1tv.png");
+	position: absolute;
+	margin-left:690px;
+	margin-top: 650px
+}
+
+#booknowmid1wife {
+	width: 130px;
+	height: 80px;
+	background: url("image/booknowmid1wife.png");
+	position: absolute;
+	margin-left: 870px;
+	margin-top: 650px
+}
+
+#booknowmid1city {
+	width: 130px;
+	height: 80px;
+	background: url("image/amentiescity.png");
+	position: absolute;
+	margin-left: 1050px;
+	margin-top: 650px
+}
+#booknowmid2{width:1360px;
+	height:820px;
+	background:white}
+#booknowmid2image{width:760px;
+	height:530px;
+	background:url("image/booknowmid2imag1.png");
+	margin-left: 0px;
+	margin-top: 60px;
+	position: absolute}
+.booknowmid2head {
+	font-size: 60px;
+	font-family: roboto;
+	position: absolute;
+	padding-left: 850px;
+	padding-top: 70px;
+	color: black;
+	
+}
+.booknowmid2subhead {
+	font-family: roboto regular;
+	font-size: 18px;
+	color: rgba(40, 40, 40, 1.00);
+	position: absolute;
+	padding-left: 930px;
+	padding-top: 190px;
+	letter-spacing: 1px;
+	line-height: 27px
+}
+
+
+.booknowmid2button{width: 240px;
+	height: 55px;
+	background: black;
+	border: none;
+	color: white;
+	font-family: roboto;
+	margin-left: 930px;
+	position: absolute;
+	margin-top: 450px}
+.booknowmid2button:hover{transform: translate(0,-15%);
+	transition: 0.5s all ease-in-out}
+#booknowmid3{width: 1360px;
+	height: 820px;
+	background: transparent}
+#booknowmid3image{width:760px;
+	height:530px;
+	background:url("image/booknowmid3image.png");
+	margin-left: 600px;
+	margin-top: 60px;
+	position: absolute}
+
+
+
+
+
+
+
+
+
+
+#superiorbanner {
+	width: 1360px;
+	height: 650px;
+	background: url("image/superiorbanner.png");
+	background-attachment: fixed
+}
+#room{
+	width: 680px;
+	height: 780px;
+	background: white
+}
+#roomimage {
+	width: 450px;
+	height: 570px;
+	background:url("image/roomimage.png");
+	margin-top: -890px;
+	margin-left: 800px;
+	border: 5px solid white
+}
+#roomimagebox{width:500px;
+	height:270px;
+	;position:absolute;
+	margin-top:600px;
+	margin-left:-10px}
+#roommid {
+	width: 1360px;
+	height: 850px;
+	background-color: rgba(19, 19, 19, 1.00);
+	margin-top: 310px
+}
+#roommid1{width:1360px;
+	height:600px;
+	;background:white}
+#bookform{width:400px;
+	height: 450px;
+	margin-left: 840px;
+	margin-top: 80px;
+	background:none;
+	position: absolute}
+
+#bookform input[type="date"]{width: 300px;
+	height: 40px;
+	background: transparent;
+	border-top: none;
+	border-left: none;
+	
+	border-right: none;
+	border-bottom: 1px solid black;
+	position: absolute;
+	margin-top: 100px}
+.adult{width: 140px;
+	height: 55px;
+	background:white;
+	position: absolute;
+	border: 1px solid black;
+margin-top: 200px}
+.child{width: 140px;
+	height: 55px;
+	background:white;
+	position: absolute;
+	border: 1px solid black;
+margin-top: 200px;
+	margin-left: 160px}
+#bookform input[type="submit"]{width: 200px;
+	height: 45px;
+	background:black;
+	color: white;
+	font-family: roboto;
+	position: absolute;
+	margin-top: 285px;
+	border: none}
+#bookform input[type="submit"]:hover{background: rgba(30,29,29,1.00);
+	transition: 0.5s all ease-in-out}
+.bookforminput{font-family: roboto regular;
+	font-size: 18px;
+	color: black;
+	position: absolute;
+	padding-top: 40px;
+	line-height: 90px;
+	word-spacing: 110px}
+.bookformhead{font-size: 25px;
+	color: black;
+	font-family: roboto regular;
+	position: absolute}
+#roommid1image{width:700px;
+	height:520px;
+
+	position:absolute;
+	margin-top:50px;
+	margin-left:30px}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+	margin-left: 30px
+}
+
+
+.next {
+  right: 50px;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin-top: -50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;position: absolute
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+	
+
+
+
+
+
+
+
+
+
+
+
+#deluxebanner {
+	width: 1360px;
+	height: 650px;
+	background: url("image/deluxebanner.png");
+	background-attachment: fixed
+}
+#deluxeroomimage {
+	width: 450px;
+	height: 570px;
+	background:url("image/deluxeroomimage.png");
+	margin-top: -890px;
+	margin-left: 800px;
+	border: 5px solid white
+}
+
+#deluxeroommid1image{width:700px;
+	height:520px;
+	background:url("image/deluxeroommid1image.png");
+	position:absolute;
+	margin-top:50px;margin-left:30px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#signaturebanner {
+	width: 1360px;
+	height: 650px;
+	background:url("image/signaturebanner.png");
+	background-attachment: fixed
+}
+#signatureroomimage {
+	width: 450px;
+	height: 570px;
+	background: url("image/signatureroomimage.png");
+	margin-top: -890px;
+	margin-left: 800px;
+	border: 5px solid white
+}
+
+#signatureroommid1image{width:700px;
+	height:520px;
+	background:url("image/signatureroommid1image.png");
+	position:absolute;
+	margin-top:50px;
+	margin-left:30px}
+
+
+
+
+
+
+
+
+
+
+	
+	
